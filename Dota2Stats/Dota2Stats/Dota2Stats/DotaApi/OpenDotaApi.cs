@@ -11,6 +11,8 @@ namespace Dota2Stats
     {
         private const string GetMatchDetailsUri = "http://api.opendota.com/api/matches/{0}";
         private const string GetPlayerDetailsUri = "https://api.opendota.com/api/players/{0}";
+        private const string GetPlayerMatchHistoryUri = "https://api.opendota.com/api/players/{0}/matches?limit={1}";
+        private const string SearchPlayerByPersonaUri = "https://api.opendota.com/api/search?q={0}";
 
         /// <summary>
         /// Get match details from the matchId
@@ -38,6 +40,29 @@ namespace Dota2Stats
 
             string requestUri = string.Format(GetPlayerDetailsUri, steamId);
             return JsonConvert.DeserializeObject<PlayerDetails>(await Utils.RequestCall(requestUri));
+        }
+
+        /// <summary>
+        /// Search players by Steam persona
+        /// </summary>
+        /// <param name="persona">aka Steam nickname</param>
+        /// <returns>List of Steam user</returns>
+        public static async Task<List<SteamUser>> SearchSteamUserByPersona(string persona)
+        {
+            string requestUri = string.Format(SearchPlayerByPersonaUri, persona);
+            return JsonConvert.DeserializeObject<List<SteamUser>>(await Utils.RequestCall(requestUri));
+        }
+
+        /// <summary>
+        /// Get player match history
+        /// </summary>
+        /// <param name="steamId32">Steam32 ID</param>
+        /// <param name="limit">Limit search, hardcoded to 5 for no reason</param>
+        /// <returns></returns>
+        public static async Task<List<PlayerMatchHistory>> GetPlayerMatchHistory(string steamId32, string limit = "5")
+        {
+            string requestUri = string.Format(SearchPlayerByPersonaUri, steamId32, limit);
+            return JsonConvert.DeserializeObject<List<PlayerMatchHistory>>(await Utils.RequestCall(requestUri));
         }
     }
 }

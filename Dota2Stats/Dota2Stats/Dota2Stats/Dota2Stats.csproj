@@ -38,10 +38,12 @@
     <Compile Include="App.cs" />
     <Compile Include="DotaApi\OpenDotaApi.cs" />
     <Compile Include="DotaApi\SteamApi.cs" />
-    <Compile Include="OpenDotaApiResponse\MatchDetails.cs" />
-    <Compile Include="OpenDotaApiResponse\PlayerDetails.cs" />
+    <Compile Include="View\MatchDetails.cs" />
+    <Compile Include="View\PlayerDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SteamApiResponse\SteamPlayer.cs" />
+    <Compile Include="View\PlayerMatchHistory.cs" />
+    <Compile Include="View\SteamUser.cs" />
+    <Compile Include="View\SteamPlayer.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
