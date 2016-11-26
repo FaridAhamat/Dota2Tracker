@@ -45,3 +45,5 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone\obj\Debug\Xamarin.Forms.Platform.WinRT.Phone.pri.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone\obj\Debug\ProjectArchitectures.txt
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone\bin\Debug\Newtonsoft.Json.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone\bin\Debug\Newtonsoft.Json.xml

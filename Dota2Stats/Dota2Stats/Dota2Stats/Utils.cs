@@ -16,21 +16,16 @@ namespace Dota2Stats
         /// <returns>String containing the response from the requestUri</returns>
         public static async Task<string> RequestCall(string requestUri)
         {
-            //HttpClient client = new HttpClient();
-            //HttpResponseMessage resp = await client.GetAsync(requestUri);
-            //resp.EnsureSuccessStatusCode();
-            //return await resp.Content.ReadAsStringAsync();
-
-            using (HttpClient client = new HttpClient())
+            using (var client = new HttpClient())
             {
-                var jsonStr = await client.GetStringAsync(requestUri);
+                var result = await client.GetStringAsync(requestUri);
 
-                if (string.IsNullOrWhiteSpace(jsonStr))
+                if (string.IsNullOrWhiteSpace(result))
                 {
                     return null;
                 }
 
-                return jsonStr;
+                return result;
             }
         }
 

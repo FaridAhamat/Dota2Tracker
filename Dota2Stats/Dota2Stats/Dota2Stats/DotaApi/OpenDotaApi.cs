@@ -10,9 +10,9 @@ namespace Dota2Stats
     class OpenDotaApi
     {
         private const string GetMatchDetailsUri = "http://api.opendota.com/api/matches/{0}";
-        private const string GetPlayerDetailsUri = "https://api.opendota.com/api/players/{0}";
-        private const string GetPlayerMatchHistoryUri = "https://api.opendota.com/api/players/{0}/matches?limit={1}";
-        private const string SearchPlayerByPersonaUri = "https://api.opendota.com/api/search?q={0}";
+        private const string GetPlayerDetailsUri = "http://api.opendota.com/api/players/{0}";
+        private const string GetPlayerMatchHistoryUri = "http://api.opendota.com/api/players/{0}/matches?limit={1}";
+        private const string SearchPlayerByPersonaUri = "http://api.opendota.com/api/search?q={0}";
 
         /// <summary>
         /// Get match details from the matchId
