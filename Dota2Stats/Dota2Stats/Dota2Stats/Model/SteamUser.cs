@@ -8,7 +8,7 @@ namespace Dota2Stats
 {
     public class SteamUser
     {
-        public int AccountId
+        public string Account_Id
         {
             get; set;
         }
@@ -22,7 +22,6 @@ namespace Dota2Stats
         }
         public double SML
         {
-            // No idea what this field is about...
             get; set;
         }
     }

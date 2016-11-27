@@ -10,19 +10,12 @@ namespace Dota2Stats
 {
     public partial class SearchSteamPersonaResultView : ContentPage
     {
-        public SearchSteamPersonaResultView(List<SteamUser> steamUsers)
+        public SearchSteamPersonaResultView(List<SteamUser> steamUsers, SearchSteamPersonaResultVM vm)
         {
             InitializeComponent();
-
-            //Debug purpose
-            if (steamUsers != null)
-            {
-                debugLabel.Text = steamUsers.Count.ToString();
-            }
-            else
-            {
-                debugLabel.Text = "DEBUGGING";
-            }
+            vm.Navigation = Navigation;
+            vm.SteamUsers = steamUsers;
+            BindingContext = vm;
         }
     }
 }

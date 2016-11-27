@@ -9,7 +9,7 @@
              WidthRequest="200"/>
       <Button Text="GO!"
               WidthRequest="50"
-              Command="{Binding SearchSteamPersonaCmd}"/>
+              Command="{Binding GoToSearchSteamPersonaCmd}"/>
     </StackLayout>
   </StackLayout>
 </ContentPage>

@@ -46,6 +46,7 @@
     <Compile Include="Model\SteamPlayer.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="ViewModel\MainPageVM.cs" />
+    <Compile Include="ViewModel\SearchSteamPersonaResultVM.cs" />
     <Compile Include="View\MainPageView.xaml.cs">
       <DependentUpon>MainPageView.xaml</DependentUpon>
     </Compile>

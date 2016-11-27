@@ -20,5 +20,3 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Debu
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Debug\Dota2Stats.pdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Debug\Dota2Stats.dll.mdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Debug\Dota2Stats.dll.mdb
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Debug\Dota2Stats.dll.mdb
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Debug\Dota2Stats.dll.mdb

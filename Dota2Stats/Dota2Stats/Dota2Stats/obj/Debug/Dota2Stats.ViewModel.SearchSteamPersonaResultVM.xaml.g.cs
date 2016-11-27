@@ -14,11 +14,11 @@ namespace Dota2Stats {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class SearchSteamPersonaResultView : global::Xamarin.Forms.ContentPage {
+    public partial class SearchSteamPersonaResultVM : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(SearchSteamPersonaResultView));
+            this.LoadFromXaml(typeof(SearchSteamPersonaResultVM));
         }
     }
 }

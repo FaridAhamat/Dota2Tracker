@@ -9,6 +9,7 @@ namespace Dota2Stats
 {
     class SteamApi
     {
+        // TODO: Decide later if this class is relevant
         private const string SteamApiKey = "xxxxxxx";           //Use your own key
         private const string GetSteamPlayerDetailsUri = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={0}&steamids={1}";
 

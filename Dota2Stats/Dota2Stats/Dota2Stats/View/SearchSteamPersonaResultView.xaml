@@ -2,8 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dota2Stats.SearchSteamPersonaResultView">
-  <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-    <Label Text="OHAI" TextColor="Red" FontSize="Large"/>
-    <Label x:Name="debugLabel" TextColor="Red" FontSize="Large"/>
+  <StackLayout>
+    <Label Text="This should show what user typed" 
+           TextColor="Red" 
+           FontSize="Large"
+           VerticalOptions="Start"/>
+    <Button Text="DEBUG BUTTON"
+            VerticalOptions="Start"
+            Command="{Binding GoToPlayerMatchHistoryCmd}"/>
+    <ListView ItemsSource="{Binding SteamUsers}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <!--TODO: Each ViewCell can only fit two rows of informations, put image together in the cell-->
+            <StackLayout Orientation="Vertical">
+              <Label Text="{Binding Account_Id}"/>
+              <!--<Label Text="{Binding PersonaName}"/>-->
+              <Label Text="{Binding AvatarFull}"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
   </StackLayout>
 </ContentPage>

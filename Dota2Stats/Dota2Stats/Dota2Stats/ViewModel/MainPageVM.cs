@@ -14,7 +14,8 @@ namespace Dota2Stats
         public MainPageVM()
         {
             // Only execute when SteamPersona is not empty
-            SearchSteamPersonaCmd = new Command(SearchSteamPersona, () => true );
+            // TODO: Fix the CanExecute()
+            GoToSearchSteamPersonaCmd = new Command(SearchSteamPersona, () => true );
         }
 
         public INavigation Navigation
@@ -40,7 +41,7 @@ namespace Dota2Stats
             }
         }
 
-        public Command SearchSteamPersonaCmd
+        public Command GoToSearchSteamPersonaCmd
         {
             get;
         }
@@ -54,9 +55,8 @@ namespace Dota2Stats
 
         private async void SearchSteamPersona()
         {
-            //await Navigation.PushAsync(new SearchSteamPersonaResultView(null));       //FOR DEBUG
             List<SteamUser> result = await OpenDotaApi.SearchSteamUserByPersona(steamPersona);
-            await Navigation.PushAsync(new SearchSteamPersonaResultView(result));
+            await Navigation.PushAsync(new SearchSteamPersonaResultView(result, new SearchSteamPersonaResultVM()));
         }
     }
 }
