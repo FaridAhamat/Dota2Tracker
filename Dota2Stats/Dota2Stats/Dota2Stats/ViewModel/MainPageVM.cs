@@ -56,7 +56,7 @@ namespace Dota2Stats
         private async void SearchSteamPersona()
         {
             List<SteamUser> result = await OpenDotaApi.SearchSteamUserByPersona(steamPersona);
-            await Navigation.PushAsync(new SearchSteamPersonaResultView(result, new SearchSteamPersonaResultVM()));
+            await Navigation.PushAsync(new SearchSteamPersonaResultView(result, new SearchSteamPersonaResultVM(steamPersona)));
         }
     }
 }

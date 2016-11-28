@@ -12,11 +12,13 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Newtonsoft.Json.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Dota2Stats.pdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Core.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Newtonsoft.Json.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\obj\Debug\Dota2Stats.Windows.csprojResolveAssemblyReference.cache
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\obj\Debug\App.g.i.cs
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\obj\Debug\App.g.cs
@@ -45,5 +47,3 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\obj\Debug\ProjectArchitectures.txt
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Newtonsoft.Json.dll
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\bin\Debug\Newtonsoft.Json.xml

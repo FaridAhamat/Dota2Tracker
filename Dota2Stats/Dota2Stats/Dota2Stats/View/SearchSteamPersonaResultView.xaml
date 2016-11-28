@@ -3,23 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dota2Stats.SearchSteamPersonaResultView">
   <StackLayout>
-    <Label Text="This should show what user typed" 
+    <Label Text="{Binding SteamPersona}" 
            TextColor="Red" 
            FontSize="Large"
            VerticalOptions="Start"/>
-    <Button Text="DEBUG BUTTON"
+    <!--<Button Text="DEBUG BUTTON"
             VerticalOptions="Start"
-            Command="{Binding GoToPlayerMatchHistoryCmd}"/>
-    <ListView ItemsSource="{Binding SteamUsers}">
+            Command="{Binding GoToPlayerMatchHistoryCmd}"/>-->
+    <ListView ItemsSource="{Binding SteamUsers}"
+              SelectedItem="{Binding SelectedSteamUser}"
+              HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <!--TODO: Each ViewCell can only fit two rows of informations, put image together in the cell-->
-            <StackLayout Orientation="Vertical">
-              <Label Text="{Binding Account_Id}"/>
-              <!--<Label Text="{Binding PersonaName}"/>-->
-              <Label Text="{Binding AvatarFull}"/>
-            </StackLayout>
+            <ContentView Padding="3">
+              <Frame OutlineColor="Teal"
+                         Padding="2">
+                <StackLayout Orientation="Vertical">
+                  <Label Text="{Binding Account_Id}"/>
+                  <Label Text="{Binding PersonaName}"/>
+                </StackLayout>
+              </Frame>
+            </ContentView>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>

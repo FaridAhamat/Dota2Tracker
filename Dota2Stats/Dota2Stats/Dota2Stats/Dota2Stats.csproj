@@ -46,9 +46,13 @@
     <Compile Include="Model\SteamPlayer.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="ViewModel\MainPageVM.cs" />
+    <Compile Include="ViewModel\PlayerMatchHistoryVM.cs" />
     <Compile Include="ViewModel\SearchSteamPersonaResultVM.cs" />
     <Compile Include="View\MainPageView.xaml.cs">
       <DependentUpon>MainPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlayerMatchHistoryView.xaml.cs">
+      <DependentUpon>PlayerMatchHistoryView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SearchSteamPersonaResultView.xaml.cs">
       <DependentUpon>SearchSteamPersonaResultView.xaml</DependentUpon>
@@ -87,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\MainPageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\PlayerMatchHistoryView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

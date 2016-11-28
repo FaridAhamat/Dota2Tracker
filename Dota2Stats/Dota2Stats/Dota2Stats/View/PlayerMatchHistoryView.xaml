@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dota2Stats.PlayerMatchHistoryView">
+  <StackLayout>
+    <Label x:Name="debugLabel"/>
+    <!--<Label Text="{Binding SteamPersona}" 
+           TextColor="Maroon" 
+           FontSize="Large"
+           VerticalOptions="Start"/>
+    <ListView ItemsSource="{Binding PlayerMatchHistory}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Vertical">
+              <Label Text="{Binding MatchId}"/>
+              <Label Text="{Binding RadiantWin}"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>-->
+  </StackLayout>
+</ContentPage>

@@ -11,9 +11,19 @@ namespace Dota2Stats
 {
     public class SearchSteamPersonaResultVM : INotifyPropertyChanged
     {
-        public SearchSteamPersonaResultVM()
+        public SearchSteamPersonaResultVM(string steamPersonaResult)
         {
+            steamPersona = steamPersonaResult;
             GoToPlayerMatchHistoryCmd = new Command(GoToPlayerMatchHistory);
+        }
+
+        string steamPersona;
+        public string SteamPersona
+        {
+            get
+            {
+                return steamPersona;
+            }
         }
 
         List<SteamUser> steamUsers;
@@ -28,6 +38,29 @@ namespace Dota2Stats
                 steamUsers = value;
                 OnPropertyChanged();
             }
+        }
+
+        SteamUser selectedSteamUser;
+        public SteamUser SelectedSteamUser
+        {
+            get
+            {
+                return selectedSteamUser;
+            }
+            set
+            {
+                if (selectedSteamUser != value)
+                {
+                    selectedSteamUser = value;
+                    GoToPlayerMatchHistory();
+                }
+                OnPropertyChanged();
+            }
+        }
+
+        private async void GoToPlayerMatchHistory()
+        {
+            await Navigation.PushAsync(new PlayerMatchHistoryView(selectedSteamUser, new PlayerMatchHistoryVM()));
         }
 
         public Command GoToPlayerMatchHistoryCmd
@@ -48,10 +81,11 @@ namespace Dota2Stats
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        private async void GoToPlayerMatchHistory()
-        {
-            //await App.Current.MainPage.DisplayAlert("THIS IS A TITLE", "This is a message", "And CANCEL message...");         //DEBUG
-            //TODO: Go the next page - Decide whether to use modal or normal
-        }
+        //private async void GoToPlayerMatchHistory()
+        //{
+        //    string msg = string.Format("Player: {0} - {1}", selectedSteamUser.Account_Id, selectedSteamUser.PersonaName);
+        //    await App.Current.MainPage.DisplayAlert("THIS IS A TITLE", msg, "And CANCEL message...");         //DEBUG
+        //    //TODO: Go the next page - Decide whether to use modal or normal
+        //}
     }
 }
