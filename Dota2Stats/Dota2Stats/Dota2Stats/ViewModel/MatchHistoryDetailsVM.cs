@@ -9,47 +9,41 @@ using Xamarin.Forms;
 
 namespace Dota2Stats
 {
-    public class PlayerMatchHistoryVM : INotifyPropertyChanged
+    public class MatchHistoryDetailsVM : INotifyPropertyChanged
     {
-        List<PlayerMatchHistory> playerMatchHistory;
-        public List<PlayerMatchHistory> PlayerMatchHistory
+        MatchDetails matchDetails;
+        public MatchDetails MatchDetails
         {
             get
             {
-                return playerMatchHistory;
+                return matchDetails;
             }
             set
             {
-                if (playerMatchHistory != value)
+                if (matchDetails != value)
                 {
-                    playerMatchHistory = value;
+                    matchDetails = value;
+                    Players = matchDetails.players;
                 }
                 OnPropertyChanged();
             }
         }
 
-        PlayerMatchHistory matchHistory;
-        public PlayerMatchHistory MatchHistory
+        private List<Player> players;
+        public List<Player> Players
         {
             get
             {
-                return matchHistory;
+                return players;
             }
-            set
+            private set
             {
-                if (value != matchHistory)
+                if (players != value)
                 {
-                    matchHistory = value;
-                    GoToMatchDetails();
+                    players = value;
                 }
                 OnPropertyChanged();
             }
-        }
-
-        private async void GoToMatchDetails()
-        {
-            var result = await OpenDotaApi.GetMatchDetails(matchHistory.match_id);
-            await Navigation.PushAsync(new MatchHistoryDetailsView(result, new MatchHistoryDetailsVM()));
         }
 
         public INavigation Navigation

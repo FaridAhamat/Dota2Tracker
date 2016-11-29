@@ -14,7 +14,6 @@ namespace Dota2Stats
         public SearchSteamPersonaResultVM(string steamPersonaResult)
         {
             steamPersona = steamPersonaResult;
-            GoToPlayerMatchHistoryCmd = new Command(GoToPlayerMatchHistory);
         }
 
         string steamPersona;
@@ -60,12 +59,8 @@ namespace Dota2Stats
 
         private async void GoToPlayerMatchHistory()
         {
-            await Navigation.PushAsync(new PlayerMatchHistoryView(selectedSteamUser, new PlayerMatchHistoryVM()));
-        }
-
-        public Command GoToPlayerMatchHistoryCmd
-        {
-            get;
+            List<PlayerMatchHistory> result = await OpenDotaApi.GetPlayerMatchHistory(selectedSteamUser.Account_Id);
+            await Navigation.PushAsync(new PlayerMatchHistoryView(result, new PlayerMatchHistoryVM()));
         }
 
         public INavigation Navigation

@@ -61,7 +61,7 @@ namespace Dota2Stats
         /// <returns></returns>
         public static async Task<List<PlayerMatchHistory>> GetPlayerMatchHistory(string steamId32, string limit = "5")
         {
-            string requestUri = string.Format(SearchPlayerByPersonaUri, steamId32, limit);
+            string requestUri = string.Format(GetPlayerMatchHistoryUri, steamId32, limit);
             return JsonConvert.DeserializeObject<List<PlayerMatchHistory>>(await Utils.RequestCall(requestUri));
         }
     }

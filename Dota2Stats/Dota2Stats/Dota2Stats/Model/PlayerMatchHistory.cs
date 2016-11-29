@@ -8,47 +8,47 @@ namespace Dota2Stats
 {
     public class PlayerMatchHistory
     {
-        public string MatchId
+        public string match_id
         {
             get; set;
         }
-        public int PlayerSlot
+        public int player_slot
         {
             get; set;
         }
-        public bool RadiantWin
+        public bool radiant_win
         {
             get; set;
         }
-        public int HeroId
+        public int hero_id
         {
             get; set;
         }
-        public int StartTime
+        public int start_time
         {
             get; set;
         }
-        public int Duration
+        public int duration
         {
             get; set;
         }
-        public int GameMode
+        public int game_mode
         {
             get; set;
         }
-        public object Version
+        public object version
         {
             get; set;
         }
-        public int Kills
+        public int kills
         {
             get; set;
         }
-        public int Deaths
+        public int deaths
         {
             get; set;
         }
-        public int Assists
+        public int assists
         {
             get; set;
         }

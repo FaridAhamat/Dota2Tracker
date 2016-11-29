@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace Dota2Stats
 {
-    public partial class PlayerMatchHistoryView : ContentPage
+    public partial class MatchHistoryDetailsView : ContentPage
     {
-        public PlayerMatchHistoryView(List<PlayerMatchHistory> matchHistories, PlayerMatchHistoryVM vm)
+        public MatchHistoryDetailsView(MatchDetails md, MatchHistoryDetailsVM vm)
         {
             InitializeComponent();
-            vm.PlayerMatchHistory = matchHistories;
+            vm.MatchDetails = md;
             vm.Navigation = Navigation;
             BindingContext = vm;
         }

@@ -4,21 +4,25 @@
              x:Class="Dota2Stats.PlayerMatchHistoryView">
   <StackLayout>
     <Label x:Name="debugLabel"/>
+    <!--Should show player name here to indicate whose match is this page showing-->
     <!--<Label Text="{Binding SteamPersona}" 
            TextColor="Maroon" 
            FontSize="Large"
-           VerticalOptions="Start"/>
-    <ListView ItemsSource="{Binding PlayerMatchHistory}">
+           VerticalOptions="Start"/>-->
+    <ListView ItemsSource="{Binding PlayerMatchHistory}"
+              SelectedItem="{Binding MatchHistory}"
+              HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
             <StackLayout Orientation="Vertical">
-              <Label Text="{Binding MatchId}"/>
-              <Label Text="{Binding RadiantWin}"/>
+              <Label Text="{Binding match_id}"/>
+              <Label Text="{Binding radiant_win}"/>
+              <Label Text="{Binding duration}"/>
             </StackLayout>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
-    </ListView>-->
+    </ListView>
   </StackLayout>
 </ContentPage>
