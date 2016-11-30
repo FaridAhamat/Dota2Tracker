@@ -59,7 +59,7 @@ namespace Dota2Stats
         /// <param name="steamId32">Steam32 ID</param>
         /// <param name="limit">Limit search, hardcoded to 5 for no reason</param>
         /// <returns></returns>
-        public static async Task<List<PlayerMatchHistory>> GetPlayerMatchHistory(string steamId32, string limit = "5")
+        public static async Task<List<PlayerMatchHistory>> GetPlayerMatchHistory(string steamId32, string limit = "20")
         {
             string requestUri = string.Format(GetPlayerMatchHistoryUri, steamId32, limit);
             return JsonConvert.DeserializeObject<List<PlayerMatchHistory>>(await Utils.RequestCall(requestUri));

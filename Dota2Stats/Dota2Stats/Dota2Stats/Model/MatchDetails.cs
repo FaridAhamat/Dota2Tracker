@@ -140,9 +140,24 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public int? account_id
+        private string accountId;
+        public string account_id
         {
-            get; set;
+            get
+            {
+                return accountId;
+            }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    accountId = "Private account";
+                }
+                else
+                {
+                    accountId = value;
+                }
+            }
         }
         public object actions
         {

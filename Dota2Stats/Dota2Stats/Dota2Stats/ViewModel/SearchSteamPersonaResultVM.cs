@@ -60,7 +60,7 @@ namespace Dota2Stats
         private async void GoToPlayerMatchHistory()
         {
             List<PlayerMatchHistory> result = await OpenDotaApi.GetPlayerMatchHistory(selectedSteamUser.Account_Id);
-            await Navigation.PushAsync(new PlayerMatchHistoryView(result, new PlayerMatchHistoryVM()));
+            await Navigation.PushAsync(new PlayerMatchHistoryView(result, selectedSteamUser, new PlayerMatchHistoryVM()));
         }
 
         public INavigation Navigation

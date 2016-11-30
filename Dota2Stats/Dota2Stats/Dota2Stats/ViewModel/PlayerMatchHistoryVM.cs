@@ -11,6 +11,19 @@ namespace Dota2Stats
 {
     public class PlayerMatchHistoryVM : INotifyPropertyChanged
     {
+        SteamUser steamuser;
+        public SteamUser SteamUser
+        {
+            get
+            {
+                return steamuser;
+            }
+            set
+            {
+                steamuser = value;
+            }
+        }
+
         List<PlayerMatchHistory> playerMatchHistory;
         public List<PlayerMatchHistory> PlayerMatchHistory
         {

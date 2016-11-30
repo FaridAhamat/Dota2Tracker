@@ -11,10 +11,15 @@
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <StackLayout>
-              <Label Text="{Binding account_id}"/>
-              <Label Text="{Binding hero_id}"/>
-            </StackLayout>
+            <ContentView Padding="2">
+              <Frame OutlineColor="Teal" 
+                     Padding="2">
+                <StackLayout>
+                  <Label Text="{Binding account_id}"/>
+                  <Label Text="{Binding hero_id}"/>
+                </StackLayout>
+              </Frame>
+            </ContentView>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>

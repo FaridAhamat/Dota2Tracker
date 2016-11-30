@@ -7,21 +7,20 @@
            TextColor="Red" 
            FontSize="Large"
            VerticalOptions="Start"/>
-    <!--<Button Text="DEBUG BUTTON"
-            VerticalOptions="Start"
-            Command="{Binding GoToPlayerMatchHistoryCmd}"/>-->
     <ListView ItemsSource="{Binding SteamUsers}"
               SelectedItem="{Binding SelectedSteamUser}"
               HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <ContentView Padding="3">
-              <Frame OutlineColor="Teal"
-                         Padding="2">
-                <StackLayout Orientation="Vertical">
-                  <Label Text="{Binding Account_Id}"/>
-                  <Label Text="{Binding PersonaName}"/>
+            <ContentView Padding="2">
+              <Frame OutlineColor="Teal" 
+                     Padding="2">
+                <StackLayout Orientation="Horizontal">
+                  <Image Source="{Binding AvatarFull}"/>
+                  <Label Text="{Binding PersonaName}"
+                         FontSize="Large"
+                         FontAttributes="Bold"/>
                 </StackLayout>
               </Frame>
             </ContentView>

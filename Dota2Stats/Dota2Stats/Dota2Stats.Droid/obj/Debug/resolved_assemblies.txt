@@ -23,12 +23,12 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\ob
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Net.Http.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.ObjectModel.dll
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Threading.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.IO.dll
