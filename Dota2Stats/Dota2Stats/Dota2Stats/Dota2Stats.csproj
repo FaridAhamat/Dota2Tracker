@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="DotaApi\OpenDotaApi.cs" />
     <Compile Include="DotaApi\SteamApi.cs" />
+    <Compile Include="Model\Heroes.cs" />
     <Compile Include="Model\MatchDetails.cs" />
     <Compile Include="Model\PlayerDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

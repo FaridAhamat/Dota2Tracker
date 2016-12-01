@@ -22,10 +22,9 @@
                      Padding="2">
                 <StackLayout Orientation="Vertical">
                   <Label Text="{Binding match_id}"/>
-                  <Label Text="{Binding radiant_win}"/>
-                  <Label Text="{Binding duration}"/>
-                  <Label Text="{Binding player_slot}"/>
-                  <Label Text="{Binding hero_id}"/>
+                  <Label Text="{Binding PlayerMatchResult}"/>
+                  <Label Text="{Binding PlayerMatchDuration}"/>
+                  <Label Text="{Binding PlayerMatchHero}"/>
                 </StackLayout>
               </Frame>
             </ContentView>

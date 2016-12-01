@@ -16,21 +16,81 @@ namespace Dota2Stats
         {
             get; set;
         }
+        private bool radiantWin;
         public bool radiant_win
         {
-            get; set;
+            get
+            {
+                return radiantWin;
+            }
+            set
+            {
+                radiantWin = value;
+
+                if (radiantWin)
+                {
+                    if (player_slot < 128)
+                    {
+                        PlayerMatchResult = "Win match";
+                    }
+                    else
+                    {
+                        PlayerMatchResult = "Lost match";
+                    }
+                }
+                else
+                {
+                    if (player_slot < 128)
+                    {
+                        PlayerMatchResult = "Lost match";
+                    }
+                    else
+                    {
+                        PlayerMatchResult = "Win match";
+                    }
+                }
+            }
         }
-        public int hero_id
+        private int heroId;
+        public int Hero_Id
         {
-            get; set;
+            get
+            {
+                return heroId;
+            }
+            set
+            {
+                heroId = value;
+
+                string playerHero = "";
+                Heroes.HeroesDict.TryGetValue(heroId, out playerHero);
+
+                if (string.IsNullOrWhiteSpace(playerHero))
+                {
+                    playerHero = "Undefined... yet";
+                }
+
+                PlayerMatchHero = playerHero;
+            }
         }
         public int start_time
         {
             get; set;
         }
-        public int duration
+        private int duration;
+        public int Duration
         {
-            get; set;
+            get
+            {
+                return duration;
+            }
+            set
+            {
+                duration = value;
+
+                TimeSpan time = TimeSpan.FromSeconds(duration);
+                PlayerMatchDuration = time.ToString(@"hh\:mm\:ss");
+            }
         }
         public int game_mode
         {
@@ -49,6 +109,18 @@ namespace Dota2Stats
             get; set;
         }
         public int assists
+        {
+            get; set;
+        }
+        public string PlayerMatchResult
+        {
+            get; set;
+        }
+        public string PlayerMatchDuration
+        {
+            get; set;
+        }
+        public string PlayerMatchHero
         {
             get; set;
         }
