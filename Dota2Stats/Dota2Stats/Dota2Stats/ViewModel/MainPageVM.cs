@@ -24,6 +24,23 @@ namespace Dota2Stats
             set;
         }
 
+        bool isBusy = false;
+        public bool IsBusy
+        {
+            get
+            {
+                return isBusy;
+            }
+            set
+            {
+                if (isBusy != value)
+                {
+                    isBusy = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         string steamPersona;
         public string SteamPersona
         {
@@ -55,7 +72,9 @@ namespace Dota2Stats
 
         private async void SearchSteamPersona()
         {
+            IsBusy = true;
             List<SteamUser> result = await OpenDotaApi.SearchSteamUserByPersona(steamPersona);
+            IsBusy = false;
             await Navigation.PushAsync(new SearchSteamPersonaResultView(result, new SearchSteamPersonaResultVM(steamPersona)));
         }
     }

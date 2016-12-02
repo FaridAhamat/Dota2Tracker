@@ -11,5 +11,6 @@
               WidthRequest="50"
               Command="{Binding GoToSearchSteamPersonaCmd}"/>
     </StackLayout>
+    <ActivityIndicator IsRunning="{Binding IsBusy}"/>
   </StackLayout>
 </ContentPage>

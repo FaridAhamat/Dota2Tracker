@@ -124,5 +124,12 @@ namespace Dota2Stats
         {
             get; set;
         }
+        public string PlayerKda
+        {
+            get
+            {
+                return string.Format("KDA: {0}/{1}/{2}", kills.ToString(), deaths.ToString(), assists.ToString());
+            }
+        }
     }
 }

@@ -21,10 +21,10 @@
               <Frame OutlineColor="Teal" 
                      Padding="2">
                 <StackLayout Orientation="Vertical">
-                  <Label Text="{Binding match_id}"/>
                   <Label Text="{Binding PlayerMatchResult}"/>
                   <Label Text="{Binding PlayerMatchDuration}"/>
                   <Label Text="{Binding PlayerMatchHero}"/>
+                  <Label Text="{Binding PlayerKda}"/>
                 </StackLayout>
               </Frame>
             </ContentView>

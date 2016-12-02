@@ -57,9 +57,28 @@ namespace Dota2Stats
             }
         }
 
+        bool isBusy = false;
+        public bool IsBusy
+        {
+            get
+            {
+                return isBusy;
+            }
+            set
+            {
+                if (isBusy != value)
+                {
+                    isBusy = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private async void GoToPlayerMatchHistory()
         {
+            IsBusy = true;
             List<PlayerMatchHistory> result = await OpenDotaApi.GetPlayerMatchHistory(selectedSteamUser.Account_Id);
+            IsBusy = false;
             await Navigation.PushAsync(new PlayerMatchHistoryView(result, selectedSteamUser, new PlayerMatchHistoryVM()));
         }
 
@@ -75,12 +94,5 @@ namespace Dota2Stats
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
-
-        //private async void GoToPlayerMatchHistory()
-        //{
-        //    string msg = string.Format("Player: {0} - {1}", selectedSteamUser.Account_Id, selectedSteamUser.PersonaName);
-        //    await App.Current.MainPage.DisplayAlert("THIS IS A TITLE", msg, "And CANCEL message...");         //DEBUG
-        //    //TODO: Go the next page - Decide whether to use modal or normal
-        //}
     }
 }
