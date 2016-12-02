@@ -21,7 +21,15 @@ namespace Dota2Stats
         {
             get
             {
-                return steamPersona;
+                return string.Format("Search result for: {0}", steamPersona);
+            }
+        }
+
+        public string ResultCount
+        {
+            get
+            {
+                return steamUsers == null ? "" : (string.Format("{0} results", steamUsers.Count));
             }
         }
 

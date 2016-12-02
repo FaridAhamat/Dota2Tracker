@@ -59,9 +59,28 @@ namespace Dota2Stats
             }
         }
 
+        bool isBusy = false;
+        public bool IsBusy
+        {
+            get
+            {
+                return isBusy;
+            }
+            set
+            {
+                if (isBusy != value)
+                {
+                    isBusy = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private async void GoToMatchDetails()
         {
+            IsBusy = true;
             var result = await OpenDotaApi.GetMatchDetails(matchHistory.match_id);
+            IsBusy = false;
             await Navigation.PushAsync(new MatchHistoryDetailsView(result, new MatchHistoryDetailsVM()));
         }
 

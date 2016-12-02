@@ -15,7 +15,25 @@ namespace Dota2Stats
         {
             // Only execute when SteamPersona is not empty
             // TODO: Fix the CanExecute()
-            GoToSearchSteamPersonaCmd = new Command(SearchSteamPersona, () => true );
+            GoToSearchSteamPersonaCmd = new Command(SearchSteamPersona, () => true);
+        }
+
+        public double EntryWidth
+        {
+            get
+            {
+                // TODO: Get size based on device's screen size here
+                return 200;
+            }
+        }
+
+        public double GoBtnWidth
+        {
+            get
+            {
+                // Get size based on device's screen here
+                return 50;
+            }
         }
 
         public INavigation Navigation

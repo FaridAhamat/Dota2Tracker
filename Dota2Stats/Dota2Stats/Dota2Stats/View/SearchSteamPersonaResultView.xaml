@@ -6,29 +6,35 @@
     <StackLayout>
       <Label Text="{Binding SteamPersona}" 
            TextColor="Red" 
-           FontSize="Large"
-           VerticalOptions="Start"/>
-      <ListView ItemsSource="{Binding SteamUsers}"
-              SelectedItem="{Binding SelectedSteamUser}"
-              HasUnevenRows="True">
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>
-              <ContentView Padding="2">
-                <Frame OutlineColor="Teal" 
+           FontSize="Large"/>
+      <Label Text="{Binding ResultCount}" 
+           TextColor="Red" 
+           FontSize="Medium"/>
+      <Frame OutlineColor="Teal" 
+             Padding="2"
+             VerticalOptions="FillAndExpand">
+        <ListView ItemsSource="{Binding SteamUsers}"
+                  SelectedItem="{Binding SelectedSteamUser}"
+                  HasUnevenRows="True">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <ContentView Padding="2">
+                  <Frame OutlineColor="Teal" 
                      Padding="2">
-                  <StackLayout Orientation="Horizontal">
-                    <Image Source="{Binding AvatarFull}"/>
-                    <Label Text="{Binding PersonaName}"
+                    <StackLayout Orientation="Horizontal">
+                      <Image Source="{Binding AvatarFull}"/>
+                      <Label Text="{Binding PersonaName}"
                          FontSize="Large"
                          FontAttributes="Bold"/>
-                  </StackLayout>
-                </Frame>
-              </ContentView>
-            </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
+                    </StackLayout>
+                  </Frame>
+                </ContentView>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </Frame>
     </StackLayout>
     <ActivityIndicator IsRunning="{Binding IsBusy}"
                        IsVisible="{Binding IsBusy}"

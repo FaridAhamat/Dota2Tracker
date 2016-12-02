@@ -2,35 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dota2Stats.PlayerMatchHistoryView">
-  <StackLayout>
-    <Label x:Name="debugLabel"/>
-    <StackLayout Orientation="Horizontal">
-      <Image Source="{Binding SteamUser.AvatarFull}"/>
-      <Label Text="{Binding SteamUser.PersonaName}"
+  <Grid>
+    <StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Image Source="{Binding SteamUser.AvatarFull}"/>
+        <Label Text="{Binding SteamUser.PersonaName}"
                          FontSize="Large"
                          FontAttributes="Bold"/>
-      <!--Add more texts here: example: Winrate, last match, etc-->
-    </StackLayout>
-    <ListView ItemsSource="{Binding PlayerMatchHistory}"
+        <!--Add more texts here: example: Winrate, last match, etc-->
+      </StackLayout>
+      <Frame OutlineColor="Teal" 
+           Padding="2"
+           VerticalOptions="FillAndExpand">
+        <ListView ItemsSource="{Binding PlayerMatchHistory}"
               SelectedItem="{Binding MatchHistory}"
               HasUnevenRows="True">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <ContentView Padding="2">
-              <Frame OutlineColor="Teal" 
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <ContentView Padding="2">
+                  <Frame OutlineColor="Teal" 
                      Padding="2">
-                <StackLayout Orientation="Vertical">
-                  <Label Text="{Binding PlayerMatchResult}"/>
-                  <Label Text="{Binding PlayerMatchDuration}"/>
-                  <Label Text="{Binding PlayerMatchHero}"/>
-                  <Label Text="{Binding PlayerKda}"/>
-                </StackLayout>
-              </Frame>
-            </ContentView>
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
-  </StackLayout>
+                    <StackLayout Orientation="Vertical">
+                      <Label Text="{Binding PlayerMatchResult}"/>
+                      <Label Text="{Binding PlayerMatchDuration}"/>
+                      <Label Text="{Binding PlayerMatchHero}"/>
+                      <Label Text="{Binding PlayerKda}"/>
+                    </StackLayout>
+                  </Frame>
+                </ContentView>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </Frame>
+    </StackLayout>
+    <ActivityIndicator IsVisible="{Binding IsBusy}"
+                       IsRunning="{Binding IsBusy}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+  </Grid>
 </ContentPage>
