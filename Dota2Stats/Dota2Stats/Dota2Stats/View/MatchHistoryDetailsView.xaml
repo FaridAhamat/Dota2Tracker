@@ -14,9 +14,17 @@
             <ContentView Padding="2">
               <Frame OutlineColor="Teal" 
                      Padding="2">
-                <StackLayout>
-                  <Label Text="{Binding account_id}"/>
-                  <Label Text="{Binding hero_id}"/>
+                <StackLayout Orientation="Horizontal">
+                  <!--<ScrollView>-->
+                  <Image Source="{Binding PlayerHeroImage}"/>
+                  <Label Text="{Binding PersonaName}"/>
+                  <!--<Image Source="{Binding PlayerItem0}"/>
+                  <Image Source="{Binding PlayerItem1}"/>
+                  <Image Source="{Binding PlayerItem2}"/>
+                  <Image Source="{Binding PlayerItem3}"/>
+                  <Image Source="{Binding PlayerItem4}"/>
+                  <Image Source="{Binding PlayerItem5}"/>-->
+                  <!--</ScrollView>-->
                 </StackLayout>
               </Frame>
             </ContentView>

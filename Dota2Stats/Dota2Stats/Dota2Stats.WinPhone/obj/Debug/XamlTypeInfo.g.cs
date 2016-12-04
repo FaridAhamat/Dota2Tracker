@@ -622,12 +622,3 @@ namespace Dota2Stats.WinPhone.Dota2Stats_WinPhone_XamlTypeInfo
 }
 
 
-
-
-
-
-
-
-
-
-

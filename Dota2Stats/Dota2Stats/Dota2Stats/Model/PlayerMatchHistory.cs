@@ -62,15 +62,15 @@ namespace Dota2Stats
             {
                 heroId = value;
 
-                string playerHero = "";
-                Heroes.HeroesDict.TryGetValue(heroId, out playerHero);
+                string playerHeroImage = "";
+                Utils.HeroesImagesDict.TryGetValue(heroId, out playerHeroImage);
 
-                if (string.IsNullOrWhiteSpace(playerHero))
+                if (string.IsNullOrWhiteSpace(playerHeroImage))
                 {
-                    playerHero = "Undefined... yet";
+                    playerHeroImage = "icon.png";
                 }
-
-                PlayerMatchHero = playerHero;
+                
+                PlayerHeroImage = playerHeroImage;
             }
         }
         public int start_time
@@ -130,6 +130,10 @@ namespace Dota2Stats
             {
                 return string.Format("KDA: {0}/{1}/{2}", kills.ToString(), deaths.ToString(), assists.ToString());
             }
+        }
+        public string PlayerHeroImage
+        {
+            get; set;
         }
     }
 }

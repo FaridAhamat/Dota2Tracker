@@ -23,11 +23,17 @@
                 <ContentView Padding="2">
                   <Frame OutlineColor="Teal" 
                      Padding="2">
-                    <StackLayout Orientation="Vertical">
-                      <Label Text="{Binding PlayerMatchResult}"/>
-                      <Label Text="{Binding PlayerMatchDuration}"/>
-                      <Label Text="{Binding PlayerMatchHero}"/>
-                      <Label Text="{Binding PlayerKda}"/>
+                    <StackLayout Orientation="Horizontal">
+                      <Image Source="{Binding PlayerHeroImage}"/>
+                      <StackLayout>
+                        <Label Text="{Binding PlayerMatchResult}"/>
+                        <Label Text="{Binding PlayerMatchDuration}"/>
+                      </StackLayout>
+                      <StackLayout>
+                        <!--Just so that I can have empty space here TODO: Find if there's better way-->
+                        <Label Text=""/>
+                        <Label Text="{Binding PlayerKda}"/>
+                      </StackLayout>
                     </StackLayout>
                   </Frame>
                 </ContentView>

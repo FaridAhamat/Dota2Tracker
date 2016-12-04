@@ -243,30 +243,60 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public int hero_id
+        int heroId;
+        public int Hero_Id
         {
-            get; set;
+            get
+            {
+                return heroId;
+            }
+            set
+            {
+                heroId = value;
+                string heroImg = "";
+                Utils.HeroesImagesDict.TryGetValue(heroId, out heroImg);
+                PlayerHeroImage = heroImg;
+            }
         }
-        public int item_0
+        int item0;
+        public int item_0 
         {
-            get; set;
+            get
+            {
+                return item0;
+            }
+            set
+            {
+                item0 = value;
+                PlayerItem0 = "item_abyssalblade.png";
+                PlayerItem1 = "item_abyssalblade.png";
+                PlayerItem2 = "item_abyssalblade.png";
+                PlayerItem3 = "item_abyssalblade.png";
+                PlayerItem4 = "item_abyssalblade.png";
+                PlayerItem5 = "item_abyssalblade.png";
+            }
         }
+        int item1;
         public int item_1
         {
             get; set;
         }
+        int item2;
         public int item_2
         {
             get; set;
         }
+        int item3;
         public int item_3
         {
             get; set;
         }
+        int item4;
         public int item_4
         {
             get; set;
         }
+        int item5;
         public int item_5
         {
             get; set;
@@ -411,9 +441,17 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public string personaname
+        string personaName = "Private account";
+        public string PersonaName
         {
-            get; set;
+            get
+            {
+                return personaName;
+            }
+            set
+            {
+                personaName = value;
+            }
         }
         public object name
         {
@@ -496,6 +534,34 @@ namespace Dota2Stats
             get; set;
         }
         public Benchmarks benchmarks
+        {
+            get; set;
+        }
+        public string PlayerHeroImage
+        {
+            get; set;
+        }
+        public string PlayerItem0
+        {
+            get; set;
+        }
+        public string PlayerItem1
+        {
+            get; set;
+        }
+        public string PlayerItem2
+        {
+            get; set;
+        }
+        public string PlayerItem3
+        {
+            get; set;
+        }
+        public string PlayerItem4
+        {
+            get; set;
+        }
+        public string PlayerItem5
         {
             get; set;
         }
