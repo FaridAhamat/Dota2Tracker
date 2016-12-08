@@ -90,10 +90,13 @@ namespace Dota2Stats
 
         private async void SearchSteamPersona()
         {
-            IsBusy = true;
-            List<SteamUser> result = await OpenDotaApi.SearchSteamUserByPersona(steamPersona);
-            IsBusy = false;
-            await Navigation.PushAsync(new SearchSteamPersonaResultView(result, new SearchSteamPersonaResultVM(steamPersona)));
+            if (!string.IsNullOrWhiteSpace(steamPersona))
+            {
+                IsBusy = true;
+                List<SteamUser> result = await OpenDotaApi.SearchSteamUserByPersona(steamPersona);
+                IsBusy = false;
+                await Navigation.PushAsync(new SearchSteamPersonaResultView(result, new SearchSteamPersonaResultVM(steamPersona)));
+            }
         }
     }
 }

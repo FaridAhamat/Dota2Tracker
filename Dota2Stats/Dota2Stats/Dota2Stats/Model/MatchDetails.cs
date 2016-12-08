@@ -258,45 +258,26 @@ namespace Dota2Stats
                 PlayerHeroImage = heroImg;
             }
         }
-        int item0;
         public int item_0 
         {
-            get
-            {
-                return item0;
-            }
-            set
-            {
-                item0 = value;
-                PlayerItem0 = "item_abyssalblade.png";
-                PlayerItem1 = "item_abyssalblade.png";
-                PlayerItem2 = "item_abyssalblade.png";
-                PlayerItem3 = "item_abyssalblade.png";
-                PlayerItem4 = "item_abyssalblade.png";
-                PlayerItem5 = "item_abyssalblade.png";
-            }
+            get; set;
         }
-        int item1;
         public int item_1
         {
             get; set;
         }
-        int item2;
         public int item_2
         {
             get; set;
         }
-        int item3;
         public int item_3
         {
             get; set;
         }
-        int item4;
         public int item_4
         {
             get; set;
         }
-        int item5;
         public int item_5
         {
             get; set;
@@ -543,27 +524,57 @@ namespace Dota2Stats
         }
         public string PlayerItem0
         {
-            get; set;
+            get
+            {
+                string itemImg = "";
+                Utils.ItemImagesDict.TryGetValue(item_0, out itemImg);
+                return itemImg;
+            }
         }
         public string PlayerItem1
         {
-            get; set;
+            get
+            {
+                string itemImg = "";
+                Utils.ItemImagesDict.TryGetValue(item_1, out itemImg);
+                return itemImg;
+            }
         }
         public string PlayerItem2
         {
-            get; set;
+            get
+            {
+                string itemImg = "";
+                Utils.ItemImagesDict.TryGetValue(item_2, out itemImg);
+                return itemImg;
+            }
         }
         public string PlayerItem3
         {
-            get; set;
+            get
+            {
+                string itemImg = "";
+                Utils.ItemImagesDict.TryGetValue(item_3, out itemImg);
+                return itemImg;
+            }
         }
         public string PlayerItem4
         {
-            get; set;
+            get
+            {
+                string itemImg = "";
+                Utils.ItemImagesDict.TryGetValue(item_4, out itemImg);
+                return itemImg;
+            }
         }
         public string PlayerItem5
         {
-            get; set;
+            get
+            {
+                string itemImg = "";
+                Utils.ItemImagesDict.TryGetValue(item_5, out itemImg);
+                return itemImg;
+            }
         }
     }
 
@@ -593,9 +604,19 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public int duration
+        int duration;
+        public int Duration
         {
-            get; set;
+            get
+            {
+                return duration;
+            }
+            set
+            {
+                duration = value;
+
+                MatchDuration = Utils.ConvertDurationToString(duration);
+            }
         }
         public int engine
         {
@@ -645,9 +666,26 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public bool radiant_win
+        bool radiantWin;
+        public bool Radiant_Win
         {
-            get; set;
+            get
+            {
+                return radiantWin;
+            }
+            set
+            {
+                radiantWin = value;
+
+                if (radiantWin)
+                {
+                    MatchResult = "Radiant Victory";
+                }
+                else
+                {
+                    MatchResult = "Dire Victory";
+                }
+            }
         }
         public object radiant_xp_adv
         {
@@ -702,6 +740,14 @@ namespace Dota2Stats
             get; set;
         }
         public string replay_url
+        {
+            get; set;
+        }
+        public string MatchResult
+        {
+            get; set;
+        }
+        public string MatchDuration
         {
             get; set;
         }

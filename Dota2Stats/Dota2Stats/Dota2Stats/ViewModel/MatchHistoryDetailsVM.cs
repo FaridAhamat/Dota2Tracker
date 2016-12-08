@@ -24,26 +24,56 @@ namespace Dota2Stats
                 {
                     matchDetails = value;
                     Players = matchDetails.players;
+                    MatchScoreline = CalculateScoreline(matchDetails.players);
                 }
                 OnPropertyChanged();
             }
         }
 
-        private List<Player> players;
-        public List<Player> Players
+        private string CalculateScoreline(List<Player> players)
+        {
+            int radDeaths = 0;
+            int direDeaths = 0;
+
+            foreach (var p in players)
+            {
+                if (p.isRadiant)
+                {
+                    radDeaths += p.deaths;
+                }
+                else
+                {
+                    direDeaths += p.deaths;
+                }
+            }
+            return string.Format("{0} - {1}", direDeaths, radDeaths);
+        }
+
+        public Color MatchResultColor
         {
             get
             {
-                return players;
-            }
-            private set
-            {
-                if (players != value)
+                if (matchDetails.Radiant_Win)
                 {
-                    players = value;
+                    return Color.FromHex("#5B9F7C");
                 }
-                OnPropertyChanged();
+                else
+                {
+                    return Color.Red;
+                }
             }
+        }
+
+        public string MatchScoreline
+        {
+            get;
+            private set;
+        }
+
+        public List<Player> Players
+        {
+            get;
+            private set;
         }
 
         public INavigation Navigation

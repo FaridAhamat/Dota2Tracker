@@ -16,40 +16,9 @@ namespace Dota2Stats
         {
             get; set;
         }
-        private bool radiantWin;
         public bool radiant_win
         {
-            get
-            {
-                return radiantWin;
-            }
-            set
-            {
-                radiantWin = value;
-
-                if (radiantWin)
-                {
-                    if (player_slot < 128)
-                    {
-                        PlayerMatchResult = "Win match";
-                    }
-                    else
-                    {
-                        PlayerMatchResult = "Lost match";
-                    }
-                }
-                else
-                {
-                    if (player_slot < 128)
-                    {
-                        PlayerMatchResult = "Lost match";
-                    }
-                    else
-                    {
-                        PlayerMatchResult = "Win match";
-                    }
-                }
-            }
+            get; set;
         }
         private int heroId;
         public int Hero_Id
@@ -77,20 +46,9 @@ namespace Dota2Stats
         {
             get; set;
         }
-        private int duration;
         public int Duration
         {
-            get
-            {
-                return duration;
-            }
-            set
-            {
-                duration = value;
-
-                TimeSpan time = TimeSpan.FromSeconds(duration);
-                PlayerMatchDuration = time.ToString(@"hh\:mm\:ss");
-            }
+            get; set;
         }
         public int game_mode
         {
@@ -114,11 +72,45 @@ namespace Dota2Stats
         }
         public string PlayerMatchResult
         {
-            get; set;
+            get
+            {
+                string result = "";
+
+                if (radiant_win)
+                {
+                    if (player_slot < 128)
+                    {
+                        result = "Win match";
+                    }
+                    else
+                    {
+                        result = "Lost match";
+                    }
+                }
+                else
+                {
+                    if (player_slot < 128)
+                    {
+                        result = "Lost match";
+                    }
+                    else
+                    {
+                        result = "Win match";
+                    }
+                }
+
+                string gameMode = "";
+                Utils.GameModeDict.TryGetValue(game_mode, out gameMode);
+
+                return string.Format("{0} ({1})", result, gameMode); ;
+            }
         }
         public string PlayerMatchDuration
         {
-            get; set;
+            get
+            {
+                return Utils.ConvertDurationToString(Duration);
+            }
         }
         public string PlayerMatchHero
         {
@@ -134,6 +126,16 @@ namespace Dota2Stats
         public string PlayerHeroImage
         {
             get; set;
+        }
+        public string MatchStartTime
+        {
+            get
+            {
+                var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+                var matchTime = epoch.AddSeconds(start_time);
+
+                return matchTime.ToString();
+            }
         }
     }
 }

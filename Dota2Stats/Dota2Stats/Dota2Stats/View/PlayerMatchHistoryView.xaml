@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dota2Stats.PlayerMatchHistoryView">
+  <ContentPage.Padding>4, 1.5, 4, 1.5</ContentPage.Padding>
   <Grid>
     <StackLayout>
       <StackLayout Orientation="Horizontal">
@@ -11,37 +12,34 @@
                          FontAttributes="Bold"/>
         <!--Add more texts here: example: Winrate, last match, etc-->
       </StackLayout>
-      <Frame OutlineColor="Teal" 
-           Padding="2"
-           VerticalOptions="FillAndExpand">
-        <ListView ItemsSource="{Binding PlayerMatchHistory}"
-              SelectedItem="{Binding MatchHistory}"
-              HasUnevenRows="True">
-          <ListView.ItemTemplate>
-            <DataTemplate>
-              <ViewCell>
-                <ContentView Padding="2">
-                  <Frame OutlineColor="Teal" 
-                     Padding="2">
-                    <StackLayout Orientation="Horizontal">
-                      <Image Source="{Binding PlayerHeroImage}"/>
+      <ListView ItemsSource="{Binding PlayerMatchHistory}"
+            SelectedItem="{Binding MatchHistory}"
+            HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ContentView Padding="2">
+                <Frame OutlineColor="Teal" 
+                    Padding="2">
+                  <StackLayout Orientation="Horizontal">
+                    <Frame Padding="1.5" BackgroundColor="#F0F0F0">
                       <StackLayout>
-                        <Label Text="{Binding PlayerMatchResult}"/>
-                        <Label Text="{Binding PlayerMatchDuration}"/>
-                      </StackLayout>
-                      <StackLayout>
-                        <!--Just so that I can have empty space here TODO: Find if there's better way-->
-                        <Label Text=""/>
+                        <Image Source="{Binding PlayerHeroImage}"/>
                         <Label Text="{Binding PlayerKda}"/>
                       </StackLayout>
+                    </Frame>
+                    <StackLayout>
+                      <Label Text="{Binding PlayerMatchResult}"/>
+                      <Label Text="{Binding PlayerMatchDuration}"/>
+                      <Label Text="{Binding MatchStartTime}"/>
                     </StackLayout>
-                  </Frame>
-                </ContentView>
-              </ViewCell>
-            </DataTemplate>
-          </ListView.ItemTemplate>
-        </ListView>
-      </Frame>
+                  </StackLayout>
+                </Frame>
+              </ContentView>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
     </StackLayout>
     <ActivityIndicator IsVisible="{Binding IsBusy}"
                        IsRunning="{Binding IsBusy}"

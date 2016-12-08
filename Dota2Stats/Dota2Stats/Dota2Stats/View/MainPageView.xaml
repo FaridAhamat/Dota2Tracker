@@ -6,6 +6,7 @@
                HorizontalOptions="CenterAndExpand">
     <StackLayout Orientation="Horizontal">
       <Entry Text="{Binding SteamPersona}"
+             Placeholder="Type player's name here..."
              WidthRequest="{Binding EntryWidth}"/>
       <Button Text="GO!"
               Command="{Binding GoToSearchSteamPersonaCmd}"

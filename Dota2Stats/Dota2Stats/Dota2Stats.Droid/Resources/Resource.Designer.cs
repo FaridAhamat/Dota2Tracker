@@ -2495,52 +2495,496 @@ namespace Dota2Stats.Droid
 			public const int item_abyssalblade = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int mr_dialog_material_background_dark = 2130837763;
+			public const int item_aegis = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int mr_dialog_material_background_light = 2130837764;
+			public const int item_aetherlens = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int mr_ic_audiotrack_light = 2130837765;
+			public const int item_aghanimscepter = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int mr_ic_cast_dark = 2130837766;
+			public const int item_arcaneboots = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int mr_ic_cast_light = 2130837767;
+			public const int item_armlet = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int mr_ic_close_dark = 2130837768;
+			public const int item_assaultcuirass = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int mr_ic_close_light = 2130837769;
+			public const int item_basher = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837770;
+			public const int item_battlefury = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int mr_ic_media_route_connecting_mono_light = 2130837771;
+			public const int item_beltofstrength = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int mr_ic_media_route_mono_dark = 2130837772;
+			public const int item_blackkingbar = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int mr_ic_media_route_mono_light = 2130837773;
+			public const int item_blademail = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int mr_ic_pause_dark = 2130837774;
+			public const int item_bladeofalacrity = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int mr_ic_pause_light = 2130837775;
+			public const int item_bladesofattack = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int mr_ic_play_dark = 2130837776;
+			public const int item_blightstone = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int mr_ic_play_light = 2130837777;
+			public const int item_blinkdagger = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int notification_template_icon_bg = 2130837778;
+			public const int item_bloodstone = 2130837778;
+			
+			// aapt resource value: 0x7f020113
+			public const int item_bloodthorn = 2130837779;
+			
+			// aapt resource value: 0x7f020114
+			public const int item_bootsofelves = 2130837780;
+			
+			// aapt resource value: 0x7f020115
+			public const int item_bootsofspeed = 2130837781;
+			
+			// aapt resource value: 0x7f020116
+			public const int item_bootsoftravel = 2130837782;
+			
+			// aapt resource value: 0x7f020117
+			public const int item_bottle = 2130837783;
+			
+			// aapt resource value: 0x7f020118
+			public const int item_bracer = 2130837784;
+			
+			// aapt resource value: 0x7f020119
+			public const int item_broadsword = 2130837785;
+			
+			// aapt resource value: 0x7f02011a
+			public const int item_buckler = 2130837786;
+			
+			// aapt resource value: 0x7f02011b
+			public const int item_butterfly = 2130837787;
+			
+			// aapt resource value: 0x7f02011c
+			public const int item_chainmail = 2130837788;
+			
+			// aapt resource value: 0x7f02011d
+			public const int item_circlet = 2130837789;
+			
+			// aapt resource value: 0x7f02011e
+			public const int item_clarity = 2130837790;
+			
+			// aapt resource value: 0x7f02011f
+			public const int item_claymore = 2130837791;
+			
+			// aapt resource value: 0x7f020120
+			public const int item_cloak = 2130837792;
+			
+			// aapt resource value: 0x7f020121
+			public const int item_courier = 2130837793;
+			
+			// aapt resource value: 0x7f020122
+			public const int item_crimsonguard = 2130837794;
+			
+			// aapt resource value: 0x7f020123
+			public const int item_crystalis = 2130837795;
+			
+			// aapt resource value: 0x7f020124
+			public const int item_daedalus = 2130837796;
+			
+			// aapt resource value: 0x7f020125
+			public const int item_dagon = 2130837797;
+			
+			// aapt resource value: 0x7f020126
+			public const int item_demonedge = 2130837798;
+			
+			// aapt resource value: 0x7f020127
+			public const int item_desolator = 2130837799;
+			
+			// aapt resource value: 0x7f020128
+			public const int item_diffusalblade = 2130837800;
+			
+			// aapt resource value: 0x7f020129
+			public const int item_dragonlance = 2130837801;
+			
+			// aapt resource value: 0x7f02012a
+			public const int item_drumofendurance = 2130837802;
+			
+			// aapt resource value: 0x7f02012b
+			public const int item_dust = 2130837803;
+			
+			// aapt resource value: 0x7f02012c
+			public const int item_eaglesong = 2130837804;
+			
+			// aapt resource value: 0x7f02012d
+			public const int item_echosabre = 2130837805;
+			
+			// aapt resource value: 0x7f02012e
+			public const int item_enchantedmango = 2130837806;
+			
+			// aapt resource value: 0x7f02012f
+			public const int item_energybooster = 2130837807;
+			
+			// aapt resource value: 0x7f020130
+			public const int item_etherealblade = 2130837808;
+			
+			// aapt resource value: 0x7f020131
+			public const int item_eul = 2130837809;
+			
+			// aapt resource value: 0x7f020132
+			public const int item_faeriefire = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int item_flask = 2130837811;
+			
+			// aapt resource value: 0x7f020134
+			public const int item_flyingcourier = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public const int item_forcestaff = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int item_gauntlets = 2130837814;
+			
+			// aapt resource value: 0x7f020137
+			public const int item_gem = 2130837815;
+			
+			// aapt resource value: 0x7f020138
+			public const int item_ghostscepter = 2130837816;
+			
+			// aapt resource value: 0x7f020139
+			public const int item_glimmercape = 2130837817;
+			
+			// aapt resource value: 0x7f02013a
+			public const int item_gloves = 2130837818;
+			
+			// aapt resource value: 0x7f02013b
+			public const int item_guardiangreaves = 2130837819;
+			
+			// aapt resource value: 0x7f02013c
+			public const int item_headdress = 2130837820;
+			
+			// aapt resource value: 0x7f02013d
+			public const int item_heart = 2130837821;
+			
+			// aapt resource value: 0x7f02013e
+			public const int item_heavenshalberd = 2130837822;
+			
+			// aapt resource value: 0x7f02013f
+			public const int item_helmofironwill = 2130837823;
+			
+			// aapt resource value: 0x7f020140
+			public const int item_helmofthedominator = 2130837824;
+			
+			// aapt resource value: 0x7f020141
+			public const int item_hex = 2130837825;
+			
+			// aapt resource value: 0x7f020142
+			public const int item_hoodofdefiance = 2130837826;
+			
+			// aapt resource value: 0x7f020143
+			public const int item_hurricanepike = 2130837827;
+			
+			// aapt resource value: 0x7f020144
+			public const int item_hyperstone = 2130837828;
+			
+			// aapt resource value: 0x7f020145
+			public const int item_infusedraindrop = 2130837829;
+			
+			// aapt resource value: 0x7f020146
+			public const int item_ironbranches = 2130837830;
+			
+			// aapt resource value: 0x7f020147
+			public const int item_irontalon = 2130837831;
+			
+			// aapt resource value: 0x7f020148
+			public const int item_javelin = 2130837832;
+			
+			// aapt resource value: 0x7f020149
+			public const int item_linkensphere = 2130837833;
+			
+			// aapt resource value: 0x7f02014a
+			public const int item_lotusorb = 2130837834;
+			
+			// aapt resource value: 0x7f02014b
+			public const int item_maelstrom = 2130837835;
+			
+			// aapt resource value: 0x7f02014c
+			public const int item_magicstick = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int item_magicwand = 2130837837;
+			
+			// aapt resource value: 0x7f02014e
+			public const int item_manta = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int item_mantle = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int item_maskofmadness = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int item_medallionofcourage = 2130837841;
+			
+			// aapt resource value: 0x7f020152
+			public const int item_mekansm = 2130837842;
+			
+			// aapt resource value: 0x7f020153
+			public const int item_midas = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int item_mithrilhammer = 2130837844;
+			
+			// aapt resource value: 0x7f020155
+			public const int item_mjollnir = 2130837845;
+			
+			// aapt resource value: 0x7f020156
+			public const int item_monkeykingbar = 2130837846;
+			
+			// aapt resource value: 0x7f020157
+			public const int item_moonshard = 2130837847;
+			
+			// aapt resource value: 0x7f020158
+			public const int item_morbidmask = 2130837848;
+			
+			// aapt resource value: 0x7f020159
+			public const int item_mysticstaff = 2130837849;
+			
+			// aapt resource value: 0x7f02015a
+			public const int item_necronomicon = 2130837850;
+			
+			// aapt resource value: 0x7f02015b
+			public const int item_nulltalisman = 2130837851;
+			
+			// aapt resource value: 0x7f02015c
+			public const int item_oblivionstaff = 2130837852;
+			
+			// aapt resource value: 0x7f02015d
+			public const int item_observerward = 2130837853;
+			
+			// aapt resource value: 0x7f02015e
+			public const int item_octarinecore = 2130837854;
+			
+			// aapt resource value: 0x7f02015f
+			public const int item_ogreaxe = 2130837855;
+			
+			// aapt resource value: 0x7f020160
+			public const int item_orbofvenom = 2130837856;
+			
+			// aapt resource value: 0x7f020161
+			public const int item_orchid = 2130837857;
+			
+			// aapt resource value: 0x7f020162
+			public const int item_perseverance = 2130837858;
+			
+			// aapt resource value: 0x7f020163
+			public const int item_phaseboots = 2130837859;
+			
+			// aapt resource value: 0x7f020164
+			public const int item_pipe = 2130837860;
+			
+			// aapt resource value: 0x7f020165
+			public const int item_platemail = 2130837861;
+			
+			// aapt resource value: 0x7f020166
+			public const int item_pointbooster = 2130837862;
+			
+			// aapt resource value: 0x7f020167
+			public const int item_poormanshield = 2130837863;
+			
+			// aapt resource value: 0x7f020168
+			public const int item_powertreads = 2130837864;
+			
+			// aapt resource value: 0x7f020169
+			public const int item_quarterstaff = 2130837865;
+			
+			// aapt resource value: 0x7f02016a
+			public const int item_quellingblade = 2130837866;
+			
+			// aapt resource value: 0x7f02016b
+			public const int item_radiance = 2130837867;
+			
+			// aapt resource value: 0x7f02016c
+			public const int item_rapier = 2130837868;
+			
+			// aapt resource value: 0x7f02016d
+			public const int item_reaver = 2130837869;
+			
+			// aapt resource value: 0x7f02016e
+			public const int item_refresher = 2130837870;
+			
+			// aapt resource value: 0x7f02016f
+			public const int item_ringofaquila = 2130837871;
+			
+			// aapt resource value: 0x7f020170
+			public const int item_ringofbasilius = 2130837872;
+			
+			// aapt resource value: 0x7f020171
+			public const int item_ringofhealth = 2130837873;
+			
+			// aapt resource value: 0x7f020172
+			public const int item_ringofprotection = 2130837874;
+			
+			// aapt resource value: 0x7f020173
+			public const int item_ringofregen = 2130837875;
+			
+			// aapt resource value: 0x7f020174
+			public const int item_robe = 2130837876;
+			
+			// aapt resource value: 0x7f020175
+			public const int item_rodofatos = 2130837877;
+			
+			// aapt resource value: 0x7f020176
+			public const int item_sacredrelic = 2130837878;
+			
+			// aapt resource value: 0x7f020177
+			public const int item_sange = 2130837879;
+			
+			// aapt resource value: 0x7f020178
+			public const int item_sangeandyasha = 2130837880;
+			
+			// aapt resource value: 0x7f020179
+			public const int item_satanic = 2130837881;
+			
+			// aapt resource value: 0x7f02017a
+			public const int item_sentryward = 2130837882;
+			
+			// aapt resource value: 0x7f02017b
+			public const int item_shadowamulet = 2130837883;
+			
+			// aapt resource value: 0x7f02017c
+			public const int item_shadowblade = 2130837884;
+			
+			// aapt resource value: 0x7f02017d
+			public const int item_shivasguard = 2130837885;
+			
+			// aapt resource value: 0x7f02017e
+			public const int item_silveredge = 2130837886;
+			
+			// aapt resource value: 0x7f02017f
+			public const int item_skadi = 2130837887;
+			
+			// aapt resource value: 0x7f020180
+			public const int item_slippers = 2130837888;
+			
+			// aapt resource value: 0x7f020181
+			public const int item_smoke = 2130837889;
+			
+			// aapt resource value: 0x7f020182
+			public const int item_sobimask = 2130837890;
+			
+			// aapt resource value: 0x7f020183
+			public const int item_solarcrest = 2130837891;
+			
+			// aapt resource value: 0x7f020184
+			public const int item_soulbooster = 2130837892;
+			
+			// aapt resource value: 0x7f020185
+			public const int item_soulring = 2130837893;
+			
+			// aapt resource value: 0x7f020186
+			public const int item_staffofwizardry = 2130837894;
+			
+			// aapt resource value: 0x7f020187
+			public const int item_stoutshield = 2130837895;
+			
+			// aapt resource value: 0x7f020188
+			public const int item_talismanofevasion = 2130837896;
+			
+			// aapt resource value: 0x7f020189
+			public const int item_tango = 2130837897;
+			
+			// aapt resource value: 0x7f02018a
+			public const int item_tomeofknowledge = 2130837898;
+			
+			// aapt resource value: 0x7f02018b
+			public const int item_tpscroll = 2130837899;
+			
+			// aapt resource value: 0x7f02018c
+			public const int item_tranquilboots = 2130837900;
+			
+			// aapt resource value: 0x7f02018d
+			public const int item_ultimateorb = 2130837901;
+			
+			// aapt resource value: 0x7f02018e
+			public const int item_urnofshadows = 2130837902;
+			
+			// aapt resource value: 0x7f02018f
+			public const int item_vanguard = 2130837903;
+			
+			// aapt resource value: 0x7f020190
+			public const int item_veilofdiscord = 2130837904;
+			
+			// aapt resource value: 0x7f020191
+			public const int item_vitalitybooster = 2130837905;
+			
+			// aapt resource value: 0x7f020192
+			public const int item_vlad = 2130837906;
+			
+			// aapt resource value: 0x7f020193
+			public const int item_voidstone = 2130837907;
+			
+			// aapt resource value: 0x7f020194
+			public const int item_windlace = 2130837908;
+			
+			// aapt resource value: 0x7f020195
+			public const int item_wraithband = 2130837909;
+			
+			// aapt resource value: 0x7f020196
+			public const int item_yasha = 2130837910;
+			
+			// aapt resource value: 0x7f020197
+			public const int mr_dialog_material_background_dark = 2130837911;
+			
+			// aapt resource value: 0x7f020198
+			public const int mr_dialog_material_background_light = 2130837912;
+			
+			// aapt resource value: 0x7f020199
+			public const int mr_ic_audiotrack_light = 2130837913;
+			
+			// aapt resource value: 0x7f02019a
+			public const int mr_ic_cast_dark = 2130837914;
+			
+			// aapt resource value: 0x7f02019b
+			public const int mr_ic_cast_light = 2130837915;
+			
+			// aapt resource value: 0x7f02019c
+			public const int mr_ic_close_dark = 2130837916;
+			
+			// aapt resource value: 0x7f02019d
+			public const int mr_ic_close_light = 2130837917;
+			
+			// aapt resource value: 0x7f02019e
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837918;
+			
+			// aapt resource value: 0x7f02019f
+			public const int mr_ic_media_route_connecting_mono_light = 2130837919;
+			
+			// aapt resource value: 0x7f0201a0
+			public const int mr_ic_media_route_mono_dark = 2130837920;
+			
+			// aapt resource value: 0x7f0201a1
+			public const int mr_ic_media_route_mono_light = 2130837921;
+			
+			// aapt resource value: 0x7f0201a2
+			public const int mr_ic_pause_dark = 2130837922;
+			
+			// aapt resource value: 0x7f0201a3
+			public const int mr_ic_pause_light = 2130837923;
+			
+			// aapt resource value: 0x7f0201a4
+			public const int mr_ic_play_dark = 2130837924;
+			
+			// aapt resource value: 0x7f0201a5
+			public const int mr_ic_play_light = 2130837925;
+			
+			// aapt resource value: 0x7f0201a6
+			public const int notification_template_icon_bg = 2130837926;
 			
 			static Drawable()
 			{

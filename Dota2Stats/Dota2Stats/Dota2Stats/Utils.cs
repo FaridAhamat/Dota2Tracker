@@ -49,6 +49,17 @@ namespace Dota2Stats
             return steam32 + 76561197960265728;
         }
 
+        /// <summary>
+        /// Convert the duration (in seconds) to proper format
+        /// </summary>
+        /// <param name="duration"></param>
+        /// <returns></returns>
+        public static string ConvertDurationToString(int duration)
+        {
+            TimeSpan time = TimeSpan.FromSeconds(duration);
+            return time.ToString(@"hh\:mm\:ss");
+        }
+
         internal static Dictionary<int, string> HeroesNameDict = new Dictionary<int, string> {
             { 1, "Anti-Mage" },
             { 2, "Axe" },
@@ -247,7 +258,7 @@ namespace Dota2Stats
             { 80, "hero_lonedruid.png" },
             { 81, "hero_chaosknight.png" },
             { 82, "hero_meepo.png" },
-            { 83, "hero_treantprotector.png" },
+            { 83, "hero_treant.png" },
             { 84, "hero_ogremagi.png" },
             { 85, "hero_undying.png" },
             { 86, "hero_rubick.png" },
@@ -450,6 +461,33 @@ namespace Dota2Stats
             //{ 1, "" },
             //{ 1, "" },
             //{ 1, "" },
+        };
+
+        internal static Dictionary<int, string> GameModeDict = new Dictionary<int, string>
+        {
+            { 0, "Unknown" },
+            { 1, "All Pick" },
+            { 2, "Captains Mode" },
+            { 3, "Random Draft" },
+            { 4, "Single Draft" },
+            { 5, "All Random" },
+            { 6, "Intro" },
+            { 7, "Diretide" },
+            { 8, "Reverse Captains Mode" },
+            { 9, "Greeviling" },
+            { 10, "Tutorial" },
+            { 11, "Mid Only" },
+            { 12, "Least Played" },
+            { 13, "Limited Heroes" },
+            { 14, "Compendium Matchmaking" },
+            { 15, "Custom" },
+            { 16, "Captains Draft" },
+            { 17, "Balanced Draft" },
+            { 18, "Ability Draft" },
+            { 19, "Event" },
+            { 20, "All Random Death Match" },
+            { 21, "1v1 Mid" },
+            { 22, "Ranked All Pick" },
         };
     }
 }
