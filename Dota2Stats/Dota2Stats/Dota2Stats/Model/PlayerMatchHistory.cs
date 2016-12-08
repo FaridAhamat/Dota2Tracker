@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Dota2Stats
 {
@@ -120,7 +121,7 @@ namespace Dota2Stats
         {
             get
             {
-                return string.Format("KDA: {0}/{1}/{2}", kills.ToString(), deaths.ToString(), assists.ToString());
+                return string.Format("{0}/{1}/{2}", kills.ToString(), deaths.ToString(), assists.ToString());
             }
         }
         public string PlayerHeroImage
@@ -132,9 +133,36 @@ namespace Dota2Stats
             get
             {
                 var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-                var matchTime = epoch.AddSeconds(start_time);
+                var timeDiff = DateTime.UtcNow - epoch.AddSeconds(start_time);
 
-                return matchTime.ToString();
+                var timeDiffHours = Math.Truncate(timeDiff.TotalHours);
+
+                if (timeDiffHours <= 23)
+                {
+                    return string.Format("{0} hours ago", timeDiffHours);
+                }
+                else
+                {
+                    return string.Format("{0} days ago", Math.Truncate(timeDiff.TotalDays));
+                }
+            }
+        }
+        public Color MatchResultColor
+        {
+            get
+            {
+                bool result = true;
+
+                if (radiant_win)
+                {
+                    result = player_slot < 128 ? true : false;
+                }
+                else
+                {
+                    result = player_slot < 128 ? false : true;
+                }
+
+                return result ? Color.Green : Color.Red;
             }
         }
     }

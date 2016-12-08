@@ -29,6 +29,7 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\ob
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Net.Http.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.ObjectModel.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Threading.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.IO.dll
@@ -44,7 +45,6 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\ob
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Text.RegularExpressions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Text.Encoding.dll
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Reflection.Extensions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll

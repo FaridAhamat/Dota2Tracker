@@ -25,11 +25,11 @@
                     <Frame Padding="1.5" BackgroundColor="#F0F0F0">
                       <StackLayout>
                         <Image Source="{Binding PlayerHeroImage}"/>
-                        <Label Text="{Binding PlayerKda}"/>
+                        <Label Text="{Binding PlayerKda}" HorizontalTextAlignment="Center"/>
                       </StackLayout>
                     </Frame>
                     <StackLayout>
-                      <Label Text="{Binding PlayerMatchResult}"/>
+                      <Label Text="{Binding PlayerMatchResult}" TextColor="{Binding MatchResultColor}"/>
                       <Label Text="{Binding PlayerMatchDuration}"/>
                       <Label Text="{Binding MatchStartTime}"/>
                     </StackLayout>

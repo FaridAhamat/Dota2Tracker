@@ -6,17 +6,17 @@
   <ScrollView>
     <StackLayout>
       <StackLayout VerticalOptions="Start">
-        <Label Text="{Binding MatchDetails.MatchResult}"
-               FontAttributes="Bold"
-               FontSize="Large"
-               TextColor="{Binding MatchResultColor}"/>
-        <Label Text="{Binding MatchDetails.MatchDuration}"
-               FontSize="Small"/>
-        <Label Text="{Binding MatchScoreline}"
-               FontSize="Small"/>
+        <Label Text="{Binding MatchDetails.MatchResult}" TextColor="{Binding MatchResultColor}"
+               FontSize="Large" FontAttributes="Bold"
+               HorizontalTextAlignment="Center"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+          <Label Text="{Binding RadiantTotalKills}" TextColor="Green" FontSize="Medium"/>
+          <Label Text="{Binding MatchDetails.MatchDuration}" FontSize="Small" VerticalTextAlignment="Center"/>
+          <Label Text="{Binding DireTotalKills}" TextColor="Red" FontSize="Medium"/>
+        </StackLayout>
       </StackLayout>
 
-      <Label Text="Radiant Overview" TextColor="#5B9F7C" FontSize="Large"/>
+      <Label Text="Radiant Overview" TextColor="Green" FontSize="Large"/>
       <Frame Padding="1.5">
         <ScrollView Orientation="Horizontal" VerticalOptions="FillAndExpand">
           <Grid>

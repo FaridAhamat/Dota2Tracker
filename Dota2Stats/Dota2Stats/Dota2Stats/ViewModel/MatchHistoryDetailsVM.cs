@@ -24,16 +24,28 @@ namespace Dota2Stats
                 {
                     matchDetails = value;
                     Players = matchDetails.players;
-                    MatchScoreline = CalculateScoreline(matchDetails.players);
+                    RadiantTotalKills = CalculateScorelineRadiant(matchDetails.players);
+                    DireTotalKills = CalculateScorelineDire(matchDetails.players);
                 }
                 OnPropertyChanged();
             }
         }
 
-        private string CalculateScoreline(List<Player> players)
+        public int RadiantTotalKills
+        {
+            get;
+            private set;
+        }
+
+        public int DireTotalKills
+        {
+            get;
+            private set;
+        }
+
+        private int CalculateScorelineDire(List<Player> players)
         {
             int radDeaths = 0;
-            int direDeaths = 0;
 
             foreach (var p in players)
             {
@@ -41,12 +53,24 @@ namespace Dota2Stats
                 {
                     radDeaths += p.deaths;
                 }
-                else
+            }
+
+            return radDeaths;
+        }
+
+        private int CalculateScorelineRadiant(List<Player> players)
+        {
+            int direDeaths = 0;
+
+            foreach (var p in players)
+            {
+                if (!p.isRadiant)
                 {
                     direDeaths += p.deaths;
                 }
             }
-            return string.Format("{0} - {1}", direDeaths, radDeaths);
+
+            return direDeaths;
         }
 
         public Color MatchResultColor
@@ -55,19 +79,13 @@ namespace Dota2Stats
             {
                 if (matchDetails.Radiant_Win)
                 {
-                    return Color.FromHex("#5B9F7C");
+                    return Color.Green;
                 }
                 else
                 {
                     return Color.Red;
                 }
             }
-        }
-
-        public string MatchScoreline
-        {
-            get;
-            private set;
         }
 
         public List<Player> Players
