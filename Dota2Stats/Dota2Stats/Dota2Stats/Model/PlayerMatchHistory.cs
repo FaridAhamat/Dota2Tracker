@@ -127,7 +127,7 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public string MatchStartTime
+        public string MatchStartTime 
         {
             get
             {

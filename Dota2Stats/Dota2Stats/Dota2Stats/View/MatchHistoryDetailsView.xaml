@@ -16,301 +16,323 @@
                FontSize="Small"/>
       </StackLayout>
 
-      <StackLayout>
-        <Label Text="Radiant Overview"
-               TextColor="#5B9F7C"
-               FontSize="Large"/>
+      <Label Text="Radiant Overview" TextColor="#5B9F7C" FontSize="Large"/>
+      <Frame Padding="1.5">
         <ScrollView Orientation="Horizontal" VerticalOptions="FillAndExpand">
-          <StackLayout>
-            <Frame BackgroundColor="Gray" Padding="3">
-              <StackLayout Orientation="Horizontal">
-                <Label Text="Player" WidthRequest="205" FontAttributes="Bold"/>
-                <Label Text="Lvl" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="K" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="D" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="A" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="GPM" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="XPM" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="LH" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="DN" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="HD" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="HH" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="TD" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="Golds" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="Items" WidthRequest="330" FontAttributes="Bold"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="1">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[0].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[0].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[0].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[0].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[0].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[0].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[0].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[0].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[0].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[0].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="1">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[1].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[1].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[1].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[1].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[1].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[1].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[1].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[1].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[1].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[1].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="1">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[2].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[2].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[2].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[2].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[2].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[2].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[2].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[2].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[2].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[2].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="1">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[3].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[3].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[3].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[3].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[3].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[3].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[3].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[3].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[3].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[3].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="1">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[4].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[4].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[4].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[4].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[4].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[4].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[4].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[4].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[4].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[4].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-          </StackLayout>
-        </ScrollView>
-      </StackLayout>
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="2*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-      <StackLayout>
-        <Label Text="Dire Overview"
-               TextColor="Red"
-               FontSize="Large"/>
-        <ScrollView Orientation="Horizontal" VerticalOptions="FillAndExpand">
-          <StackLayout>
-            <Frame BackgroundColor="Gray" Padding="3">
-              <StackLayout Orientation="Horizontal">
-                <Label Text="Player" WidthRequest="205" FontAttributes="Bold"/>
-                <Label Text="Lvl" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="K" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="D" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="A" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="GPM" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="XPM" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="LH" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="DN" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="HD" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="HH" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="TD" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="Golds" WidthRequest="53.5" FontAttributes="Bold"/>
-                <Label Text="Items" WidthRequest="330" FontAttributes="Bold"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="1">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[5].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[5].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[5].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[5].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[5].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[5].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[5].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[5].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[5].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[5].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="3">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[6].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[6].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[6].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[6].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[6].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[6].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[6].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[6].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[6].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[6].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="3">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[7].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[7].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[7].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[7].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[7].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[7].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[7].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[7].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[7].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[7].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="3">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[8].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[8].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[8].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[8].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[8].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[8].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[8].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[8].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[8].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[8].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-            <Frame Padding="3">
-              <StackLayout Orientation="Horizontal">
-                <Image Source="{Binding Players[9].PlayerHeroImage}"/>
-                <Label Text="{Binding Players[9].PersonaName}" WidthRequest="105"/>
-                <Label Text="{Binding Players[9].level}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].kills}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].deaths}" WidthRequest="51.5" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].assists}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].gold_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].xp_per_min}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].last_hits}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].denies}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].hero_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].hero_healing}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].tower_damage}" WidthRequest="53" HorizontalTextAlignment="Center"/>
-                <Label Text="{Binding Players[9].gold}" WidthRequest="64" HorizontalTextAlignment="Center"/>
-                <Image Source="{Binding Players[9].PlayerItem0}" WidthRequest="55"/>
-                <Image Source="{Binding Players[9].PlayerItem1}" WidthRequest="55"/>
-                <Image Source="{Binding Players[9].PlayerItem2}" WidthRequest="55"/>
-                <Image Source="{Binding Players[9].PlayerItem3}" WidthRequest="55"/>
-                <Image Source="{Binding Players[9].PlayerItem4}" WidthRequest="55"/>
-                <Image Source="{Binding Players[9].PlayerItem5}" WidthRequest="55"/>
-              </StackLayout>
-            </Frame>
-          </StackLayout>
+            <BoxView BackgroundColor="#F0F0F0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="20" HeightRequest="25"/>
+            <Label Text="Player" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Level" Grid.Row="0" Grid.Column="2" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="K" Grid.Row="0" Grid.Column="3" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="D" Grid.Row="0" Grid.Column="4" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="A" Grid.Row="0" Grid.Column="5" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="GPM" Grid.Row="0" Grid.Column="6" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="XPM" Grid.Row="0" Grid.Column="7" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="LH" Grid.Row="0" Grid.Column="8" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="DN" Grid.Row="0" Grid.Column="9" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="HD" Grid.Row="0" Grid.Column="10" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="HH" Grid.Row="0" Grid.Column="11" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="TD" Grid.Row="0" Grid.Column="12" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Golds" Grid.Row="0" Grid.Column="13" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
+
+            <Image Source="{Binding Players[0].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="{Binding Players[0].PersonaName}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding Players[0].level}" Grid.Row="1" Grid.Column="2"/>
+            <Label Text="{Binding Players[0].kills}" Grid.Row="1" Grid.Column="3"/>
+            <Label Text="{Binding Players[0].deaths}" Grid.Row="1" Grid.Column="4"/>
+            <Label Text="{Binding Players[0].assists}" Grid.Row="1" Grid.Column="5"/>
+            <Label Text="{Binding Players[0].gold_per_min}" Grid.Row="1" Grid.Column="6"/>
+            <Label Text="{Binding Players[0].xp_per_min}" Grid.Row="1" Grid.Column="7"/>
+            <Label Text="{Binding Players[0].last_hits}" Grid.Row="1" Grid.Column="8"/>
+            <Label Text="{Binding Players[0].denies}" Grid.Row="1" Grid.Column="9"/>
+            <Label Text="{Binding Players[0].hero_damage}" Grid.Row="1" Grid.Column="10"/>
+            <Label Text="{Binding Players[0].hero_healing}" Grid.Row="1" Grid.Column="11"/>
+            <Label Text="{Binding Players[0].tower_damage}" Grid.Row="1" Grid.Column="12"/>
+            <Label Text="{Binding Players[0].gold}" Grid.Row="1" Grid.Column="13"/>
+            <Image Source="{Binding Players[0].PlayerItem0}" Grid.Row="1" Grid.Column="14"/>
+            <Image Source="{Binding Players[0].PlayerItem1}" Grid.Row="1" Grid.Column="15"/>
+            <Image Source="{Binding Players[0].PlayerItem2}" Grid.Row="1" Grid.Column="16"/>
+            <Image Source="{Binding Players[0].PlayerItem3}" Grid.Row="1" Grid.Column="17"/>
+            <Image Source="{Binding Players[0].PlayerItem4}" Grid.Row="1" Grid.Column="18"/>
+            <Image Source="{Binding Players[0].PlayerItem5}" Grid.Row="1" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[1].PlayerHeroImage}" Grid.Row="2" Grid.Column="0"/>
+            <Label Text="{Binding Players[1].PersonaName}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="{Binding Players[1].level}" Grid.Row="2" Grid.Column="2"/>
+            <Label Text="{Binding Players[1].kills}" Grid.Row="2" Grid.Column="3"/>
+            <Label Text="{Binding Players[1].deaths}" Grid.Row="2" Grid.Column="4"/>
+            <Label Text="{Binding Players[1].assists}" Grid.Row="2" Grid.Column="5"/>
+            <Label Text="{Binding Players[1].gold_per_min}" Grid.Row="2" Grid.Column="6"/>
+            <Label Text="{Binding Players[1].xp_per_min}" Grid.Row="2" Grid.Column="7"/>
+            <Label Text="{Binding Players[1].last_hits}" Grid.Row="2" Grid.Column="8"/>
+            <Label Text="{Binding Players[1].denies}" Grid.Row="2" Grid.Column="9"/>
+            <Label Text="{Binding Players[1].hero_damage}" Grid.Row="2" Grid.Column="10"/>
+            <Label Text="{Binding Players[1].hero_healing}" Grid.Row="2" Grid.Column="11"/>
+            <Label Text="{Binding Players[1].tower_damage}" Grid.Row="2" Grid.Column="12"/>
+            <Label Text="{Binding Players[1].gold}" Grid.Row="2" Grid.Column="13"/>
+            <Image Source="{Binding Players[1].PlayerItem0}" Grid.Row="2" Grid.Column="14"/>
+            <Image Source="{Binding Players[1].PlayerItem1}" Grid.Row="2" Grid.Column="15"/>
+            <Image Source="{Binding Players[1].PlayerItem2}" Grid.Row="2" Grid.Column="16"/>
+            <Image Source="{Binding Players[1].PlayerItem3}" Grid.Row="2" Grid.Column="17"/>
+            <Image Source="{Binding Players[1].PlayerItem4}" Grid.Row="2" Grid.Column="18"/>
+            <Image Source="{Binding Players[1].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[2].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
+            <Label Text="{Binding Players[2].PersonaName}" Grid.Row="3" Grid.Column="1"/>
+            <Label Text="{Binding Players[2].level}" Grid.Row="3" Grid.Column="2"/>
+            <Label Text="{Binding Players[2].kills}" Grid.Row="3" Grid.Column="3"/>
+            <Label Text="{Binding Players[2].deaths}" Grid.Row="3" Grid.Column="4"/>
+            <Label Text="{Binding Players[2].assists}" Grid.Row="3" Grid.Column="5"/>
+            <Label Text="{Binding Players[2].gold_per_min}" Grid.Row="3" Grid.Column="6"/>
+            <Label Text="{Binding Players[2].xp_per_min}" Grid.Row="3" Grid.Column="7"/>
+            <Label Text="{Binding Players[2].last_hits}" Grid.Row="3" Grid.Column="8"/>
+            <Label Text="{Binding Players[2].denies}" Grid.Row="3" Grid.Column="9"/>
+            <Label Text="{Binding Players[2].hero_damage}" Grid.Row="3" Grid.Column="10"/>
+            <Label Text="{Binding Players[2].hero_healing}" Grid.Row="3" Grid.Column="11"/>
+            <Label Text="{Binding Players[2].tower_damage}" Grid.Row="3" Grid.Column="12"/>
+            <Label Text="{Binding Players[2].gold}" Grid.Row="3" Grid.Column="13"/>
+            <Image Source="{Binding Players[2].PlayerItem0}" Grid.Row="3" Grid.Column="14"/>
+            <Image Source="{Binding Players[2].PlayerItem1}" Grid.Row="3" Grid.Column="15"/>
+            <Image Source="{Binding Players[2].PlayerItem2}" Grid.Row="3" Grid.Column="16"/>
+            <Image Source="{Binding Players[2].PlayerItem3}" Grid.Row="3" Grid.Column="17"/>
+            <Image Source="{Binding Players[2].PlayerItem4}" Grid.Row="3" Grid.Column="18"/>
+            <Image Source="{Binding Players[2].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[3].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="{Binding Players[3].PersonaName}" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="{Binding Players[3].level}" Grid.Row="4" Grid.Column="2"/>
+            <Label Text="{Binding Players[3].kills}" Grid.Row="4" Grid.Column="3"/>
+            <Label Text="{Binding Players[3].deaths}" Grid.Row="4" Grid.Column="4"/>
+            <Label Text="{Binding Players[3].assists}" Grid.Row="4" Grid.Column="5"/>
+            <Label Text="{Binding Players[3].gold_per_min}" Grid.Row="4" Grid.Column="6"/>
+            <Label Text="{Binding Players[3].xp_per_min}" Grid.Row="4" Grid.Column="7"/>
+            <Label Text="{Binding Players[3].last_hits}" Grid.Row="4" Grid.Column="8"/>
+            <Label Text="{Binding Players[3].denies}" Grid.Row="4" Grid.Column="9"/>
+            <Label Text="{Binding Players[3].hero_damage}" Grid.Row="4" Grid.Column="10"/>
+            <Label Text="{Binding Players[3].hero_healing}" Grid.Row="4" Grid.Column="11"/>
+            <Label Text="{Binding Players[3].tower_damage}" Grid.Row="4" Grid.Column="12"/>
+            <Label Text="{Binding Players[3].gold}" Grid.Row="4" Grid.Column="13"/>
+            <Image Source="{Binding Players[3].PlayerItem0}" Grid.Row="4" Grid.Column="14"/>
+            <Image Source="{Binding Players[3].PlayerItem1}" Grid.Row="4" Grid.Column="15"/>
+            <Image Source="{Binding Players[3].PlayerItem2}" Grid.Row="4" Grid.Column="16"/>
+            <Image Source="{Binding Players[3].PlayerItem3}" Grid.Row="4" Grid.Column="17"/>
+            <Image Source="{Binding Players[3].PlayerItem4}" Grid.Row="4" Grid.Column="18"/>
+            <Image Source="{Binding Players[3].PlayerItem5}" Grid.Row="4" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[4].PlayerHeroImage}" Grid.Row="5" Grid.Column="0"/>
+            <Label Text="{Binding Players[4].PersonaName}" Grid.Row="5" Grid.Column="1"/>
+            <Label Text="{Binding Players[4].level}" Grid.Row="5" Grid.Column="2"/>
+            <Label Text="{Binding Players[4].kills}" Grid.Row="5" Grid.Column="3"/>
+            <Label Text="{Binding Players[4].deaths}" Grid.Row="5" Grid.Column="4"/>
+            <Label Text="{Binding Players[4].assists}" Grid.Row="5" Grid.Column="5"/>
+            <Label Text="{Binding Players[4].gold_per_min}" Grid.Row="5" Grid.Column="6"/>
+            <Label Text="{Binding Players[4].xp_per_min}" Grid.Row="5" Grid.Column="7"/>
+            <Label Text="{Binding Players[4].last_hits}" Grid.Row="5" Grid.Column="8"/>
+            <Label Text="{Binding Players[4].denies}" Grid.Row="5" Grid.Column="9"/>
+            <Label Text="{Binding Players[4].hero_damage}" Grid.Row="5" Grid.Column="10"/>
+            <Label Text="{Binding Players[4].hero_healing}" Grid.Row="5" Grid.Column="11"/>
+            <Label Text="{Binding Players[4].tower_damage}" Grid.Row="5" Grid.Column="12"/>
+            <Label Text="{Binding Players[4].gold}" Grid.Row="5" Grid.Column="13"/>
+            <Image Source="{Binding Players[4].PlayerItem0}" Grid.Row="5" Grid.Column="14"/>
+            <Image Source="{Binding Players[4].PlayerItem1}" Grid.Row="5" Grid.Column="15"/>
+            <Image Source="{Binding Players[4].PlayerItem2}" Grid.Row="5" Grid.Column="16"/>
+            <Image Source="{Binding Players[4].PlayerItem3}" Grid.Row="5" Grid.Column="17"/>
+            <Image Source="{Binding Players[4].PlayerItem4}" Grid.Row="5" Grid.Column="18"/>
+            <Image Source="{Binding Players[4].PlayerItem5}" Grid.Row="5" Grid.Column="19"/>
+          </Grid>
         </ScrollView>
-      </StackLayout>
+      </Frame>
+
+      <Label Text="Dire Overview" TextColor="Red" FontSize="Large"/>
+      <Frame Padding="1.5">
+        <ScrollView Orientation="Horizontal" VerticalOptions="FillAndExpand">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="2*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="#F0F0F0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="20" HeightRequest="25"/>
+            <Label Text="Player" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Level" Grid.Row="0" Grid.Column="2" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="K" Grid.Row="0" Grid.Column="3" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="D" Grid.Row="0" Grid.Column="4" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="A" Grid.Row="0" Grid.Column="5" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="GPM" Grid.Row="0" Grid.Column="6" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="XPM" Grid.Row="0" Grid.Column="7" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="LH" Grid.Row="0" Grid.Column="8" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="DN" Grid.Row="0" Grid.Column="9" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="HD" Grid.Row="0" Grid.Column="10" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="HH" Grid.Row="0" Grid.Column="11" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="TD" Grid.Row="0" Grid.Column="12" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Golds" Grid.Row="0" Grid.Column="13" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
+
+            <Image Source="{Binding Players[5].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="{Binding Players[5].PersonaName}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding Players[5].level}" Grid.Row="1" Grid.Column="2"/>
+            <Label Text="{Binding Players[5].kills}" Grid.Row="1" Grid.Column="3"/>
+            <Label Text="{Binding Players[5].deaths}" Grid.Row="1" Grid.Column="4"/>
+            <Label Text="{Binding Players[5].assists}" Grid.Row="1" Grid.Column="5"/>
+            <Label Text="{Binding Players[5].gold_per_min}" Grid.Row="1" Grid.Column="6"/>
+            <Label Text="{Binding Players[5].xp_per_min}" Grid.Row="1" Grid.Column="7"/>
+            <Label Text="{Binding Players[5].last_hits}" Grid.Row="1" Grid.Column="8"/>
+            <Label Text="{Binding Players[5].denies}" Grid.Row="1" Grid.Column="9"/>
+            <Label Text="{Binding Players[5].hero_damage}" Grid.Row="1" Grid.Column="10"/>
+            <Label Text="{Binding Players[5].hero_healing}" Grid.Row="1" Grid.Column="11"/>
+            <Label Text="{Binding Players[5].tower_damage}" Grid.Row="1" Grid.Column="12"/>
+            <Label Text="{Binding Players[5].gold}" Grid.Row="1" Grid.Column="13"/>
+            <Image Source="{Binding Players[5].PlayerItem0}" Grid.Row="1" Grid.Column="14"/>
+            <Image Source="{Binding Players[5].PlayerItem1}" Grid.Row="1" Grid.Column="15"/>
+            <Image Source="{Binding Players[5].PlayerItem2}" Grid.Row="1" Grid.Column="16"/>
+            <Image Source="{Binding Players[5].PlayerItem3}" Grid.Row="1" Grid.Column="17"/>
+            <Image Source="{Binding Players[5].PlayerItem4}" Grid.Row="1" Grid.Column="18"/>
+            <Image Source="{Binding Players[5].PlayerItem5}" Grid.Row="1" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[6].PlayerHeroImage}" Grid.Row="2" Grid.Column="0"/>
+            <Label Text="{Binding Players[6].PersonaName}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="{Binding Players[6].level}" Grid.Row="2" Grid.Column="2"/>
+            <Label Text="{Binding Players[6].kills}" Grid.Row="2" Grid.Column="3"/>
+            <Label Text="{Binding Players[6].deaths}" Grid.Row="2" Grid.Column="4"/>
+            <Label Text="{Binding Players[6].assists}" Grid.Row="2" Grid.Column="5"/>
+            <Label Text="{Binding Players[6].gold_per_min}" Grid.Row="2" Grid.Column="6"/>
+            <Label Text="{Binding Players[6].xp_per_min}" Grid.Row="2" Grid.Column="7"/>
+            <Label Text="{Binding Players[6].last_hits}" Grid.Row="2" Grid.Column="8"/>
+            <Label Text="{Binding Players[6].denies}" Grid.Row="2" Grid.Column="9"/>
+            <Label Text="{Binding Players[6].hero_damage}" Grid.Row="2" Grid.Column="10"/>
+            <Label Text="{Binding Players[6].hero_healing}" Grid.Row="2" Grid.Column="11"/>
+            <Label Text="{Binding Players[6].tower_damage}" Grid.Row="2" Grid.Column="12"/>
+            <Label Text="{Binding Players[6].gold}" Grid.Row="2" Grid.Column="13"/>
+            <Image Source="{Binding Players[6].PlayerItem0}" Grid.Row="2" Grid.Column="14"/>
+            <Image Source="{Binding Players[6].PlayerItem1}" Grid.Row="2" Grid.Column="15"/>
+            <Image Source="{Binding Players[6].PlayerItem2}" Grid.Row="2" Grid.Column="16"/>
+            <Image Source="{Binding Players[6].PlayerItem3}" Grid.Row="2" Grid.Column="17"/>
+            <Image Source="{Binding Players[6].PlayerItem4}" Grid.Row="2" Grid.Column="18"/>
+            <Image Source="{Binding Players[6].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[7].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
+            <Label Text="{Binding Players[7].PersonaName}" Grid.Row="3" Grid.Column="1"/>
+            <Label Text="{Binding Players[7].level}" Grid.Row="3" Grid.Column="2"/>
+            <Label Text="{Binding Players[7].kills}" Grid.Row="3" Grid.Column="3"/>
+            <Label Text="{Binding Players[7].deaths}" Grid.Row="3" Grid.Column="4"/>
+            <Label Text="{Binding Players[7].assists}" Grid.Row="3" Grid.Column="5"/>
+            <Label Text="{Binding Players[7].gold_per_min}" Grid.Row="3" Grid.Column="6"/>
+            <Label Text="{Binding Players[7].xp_per_min}" Grid.Row="3" Grid.Column="7"/>
+            <Label Text="{Binding Players[7].last_hits}" Grid.Row="3" Grid.Column="8"/>
+            <Label Text="{Binding Players[7].denies}" Grid.Row="3" Grid.Column="9"/>
+            <Label Text="{Binding Players[7].hero_damage}" Grid.Row="3" Grid.Column="10"/>
+            <Label Text="{Binding Players[7].hero_healing}" Grid.Row="3" Grid.Column="11"/>
+            <Label Text="{Binding Players[7].tower_damage}" Grid.Row="3" Grid.Column="12"/>
+            <Label Text="{Binding Players[7].gold}" Grid.Row="3" Grid.Column="13"/>
+            <Image Source="{Binding Players[7].PlayerItem0}" Grid.Row="3" Grid.Column="14"/>
+            <Image Source="{Binding Players[7].PlayerItem1}" Grid.Row="3" Grid.Column="15"/>
+            <Image Source="{Binding Players[7].PlayerItem2}" Grid.Row="3" Grid.Column="16"/>
+            <Image Source="{Binding Players[7].PlayerItem3}" Grid.Row="3" Grid.Column="17"/>
+            <Image Source="{Binding Players[7].PlayerItem4}" Grid.Row="3" Grid.Column="18"/>
+            <Image Source="{Binding Players[7].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[8].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="{Binding Players[8].PersonaName}" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="{Binding Players[8].level}" Grid.Row="4" Grid.Column="2"/>
+            <Label Text="{Binding Players[8].kills}" Grid.Row="4" Grid.Column="3"/>
+            <Label Text="{Binding Players[8].deaths}" Grid.Row="4" Grid.Column="4"/>
+            <Label Text="{Binding Players[8].assists}" Grid.Row="4" Grid.Column="5"/>
+            <Label Text="{Binding Players[8].gold_per_min}" Grid.Row="4" Grid.Column="6"/>
+            <Label Text="{Binding Players[8].xp_per_min}" Grid.Row="4" Grid.Column="7"/>
+            <Label Text="{Binding Players[8].last_hits}" Grid.Row="4" Grid.Column="8"/>
+            <Label Text="{Binding Players[8].denies}" Grid.Row="4" Grid.Column="9"/>
+            <Label Text="{Binding Players[8].hero_damage}" Grid.Row="4" Grid.Column="10"/>
+            <Label Text="{Binding Players[8].hero_healing}" Grid.Row="4" Grid.Column="11"/>
+            <Label Text="{Binding Players[8].tower_damage}" Grid.Row="4" Grid.Column="12"/>
+            <Label Text="{Binding Players[8].gold}" Grid.Row="4" Grid.Column="13"/>
+            <Image Source="{Binding Players[8].PlayerItem0}" Grid.Row="4" Grid.Column="14"/>
+            <Image Source="{Binding Players[8].PlayerItem1}" Grid.Row="4" Grid.Column="15"/>
+            <Image Source="{Binding Players[8].PlayerItem2}" Grid.Row="4" Grid.Column="16"/>
+            <Image Source="{Binding Players[8].PlayerItem3}" Grid.Row="4" Grid.Column="17"/>
+            <Image Source="{Binding Players[8].PlayerItem4}" Grid.Row="4" Grid.Column="18"/>
+            <Image Source="{Binding Players[8].PlayerItem5}" Grid.Row="4" Grid.Column="19"/>
+
+            <Image Source="{Binding Players[9].PlayerHeroImage}" Grid.Row="5" Grid.Column="0"/>
+            <Label Text="{Binding Players[9].PersonaName}" Grid.Row="5" Grid.Column="1"/>
+            <Label Text="{Binding Players[9].level}" Grid.Row="5" Grid.Column="2"/>
+            <Label Text="{Binding Players[9].kills}" Grid.Row="5" Grid.Column="3"/>
+            <Label Text="{Binding Players[9].deaths}" Grid.Row="5" Grid.Column="4"/>
+            <Label Text="{Binding Players[9].assists}" Grid.Row="5" Grid.Column="5"/>
+            <Label Text="{Binding Players[9].gold_per_min}" Grid.Row="5" Grid.Column="6"/>
+            <Label Text="{Binding Players[9].xp_per_min}" Grid.Row="5" Grid.Column="7"/>
+            <Label Text="{Binding Players[9].last_hits}" Grid.Row="5" Grid.Column="8"/>
+            <Label Text="{Binding Players[9].denies}" Grid.Row="5" Grid.Column="9"/>
+            <Label Text="{Binding Players[9].hero_damage}" Grid.Row="5" Grid.Column="10"/>
+            <Label Text="{Binding Players[9].hero_healing}" Grid.Row="5" Grid.Column="11"/>
+            <Label Text="{Binding Players[9].tower_damage}" Grid.Row="5" Grid.Column="12"/>
+            <Label Text="{Binding Players[9].gold}" Grid.Row="5" Grid.Column="13"/>
+            <Image Source="{Binding Players[9].PlayerItem0}" Grid.Row="5" Grid.Column="14"/>
+            <Image Source="{Binding Players[9].PlayerItem1}" Grid.Row="5" Grid.Column="15"/>
+            <Image Source="{Binding Players[9].PlayerItem2}" Grid.Row="5" Grid.Column="16"/>
+            <Image Source="{Binding Players[9].PlayerItem3}" Grid.Row="5" Grid.Column="17"/>
+            <Image Source="{Binding Players[9].PlayerItem4}" Grid.Row="5" Grid.Column="18"/>
+            <Image Source="{Binding Players[9].PlayerItem5}" Grid.Row="5" Grid.Column="19"/>
+          </Grid>
+        </ScrollView>
+      </Frame>
     </StackLayout>
   </ScrollView>
 </ContentPage>
