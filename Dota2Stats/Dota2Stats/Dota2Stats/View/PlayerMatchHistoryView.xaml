@@ -7,10 +7,26 @@
     <StackLayout>
       <StackLayout Orientation="Horizontal">
         <Image Source="{Binding SteamUser.AvatarFull}"/>
-        <Label Text="{Binding SteamUser.PersonaName}"
-                         FontSize="Large"
-                         FontAttributes="Bold"/>
-        <!--Add more texts here: example: Winrate, last match, etc-->
+        <StackLayout>
+          <Label Text="{Binding SteamUser.PersonaName}" FontSize="Large" FontAttributes="Bold"/>
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Wins" FontSize="Small" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Losses" FontSize="Small" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="Winrate" FontSize="Small" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+            <Label Text="{Binding PlayerWinLose.win}" FontSize="Small" TextColor="Green" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="{Binding PlayerWinLose.lose}" FontSize="Small" TextColor="Red" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding PlayerWinLose.WinRateStr}" FontSize="Small" Grid.Row="1" Grid.Column="2"/>
+          </Grid>
+        </StackLayout>
       </StackLayout>
       <ListView ItemsSource="{Binding PlayerMatchHistory}"
             SelectedItem="{Binding MatchHistory}"

@@ -9,11 +9,12 @@ namespace Dota2Stats
 {
     public partial class PlayerMatchHistoryView : ContentPage
     {
-        public PlayerMatchHistoryView(List<PlayerMatchHistory> matchHistories, SteamUser steamUser, PlayerMatchHistoryVM vm)
+        public PlayerMatchHistoryView(List<PlayerMatchHistory> matchHistories, SteamUser steamUser, PlayerWinLose playerWinlose, PlayerMatchHistoryVM vm)
         {
             InitializeComponent();
             vm.SteamUser = steamUser;
             vm.PlayerMatchHistory = matchHistories;
+            vm.PlayerWinLose = playerWinlose;
             vm.Navigation = Navigation;
             BindingContext = vm;
         }
