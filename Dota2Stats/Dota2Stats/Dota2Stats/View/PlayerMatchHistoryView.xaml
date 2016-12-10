@@ -27,6 +27,9 @@
             <Label Text="{Binding PlayerWinLose.WinRateStr}" FontSize="Small" Grid.Row="1" Grid.Column="2"/>
           </Grid>
         </StackLayout>
+        <StackLayout VerticalOptions="Center">
+          <Button Text="Track Player" Command="{Binding TrackPlayerCmd}"/>
+        </StackLayout>
       </StackLayout>
       <ListView ItemsSource="{Binding PlayerMatchHistory}"
             SelectedItem="{Binding MatchHistory}"

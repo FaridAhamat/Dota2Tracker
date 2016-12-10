@@ -73,6 +73,22 @@ namespace Dota2Stats
             }
         }
 
+        public Command TrackPlayerCmd
+        {
+            get;
+        }
+
+        public PlayerMatchHistoryVM()
+        {
+            // TODO: Fix the CanExecute()
+            TrackPlayerCmd = new Command(SaveSteamUser, () => true);
+        }
+
+        private void SaveSteamUser()
+        {
+            //Later
+        }
+
         private async void GoToMatchDetails()
         {
             IsBusy = true;

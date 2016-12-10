@@ -18,4 +18,18 @@
     <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding GoToSearchSteamPersonaCmd}"
                        Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
   </Grid>
+  <!--<StackLayout VerticalOptions="End">
+    <ListView ItemsSource="SteamUsersData" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <Label Text="{Binding AccountId}"/>
+              <Label Text="{Binding PersonaName}"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>-->
 </ContentPage>

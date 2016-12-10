@@ -18,22 +18,10 @@ namespace Dota2Stats
             GoToSearchSteamPersonaCmd = new Command(SearchSteamPersona, () => true);
         }
 
-        public double EntryWidth
+        public List<SteamUserData> SteamUsersData
         {
-            get
-            {
-                // TODO: Get size based on device's screen size here
-                return 200;
-            }
-        }
-
-        public double GoBtnWidth
-        {
-            get
-            {
-                // Get size based on device's screen here
-                return 50;
-            }
+            get;
+            set;
         }
 
         public INavigation Navigation

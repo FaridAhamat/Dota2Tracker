@@ -43,6 +43,9 @@
     <AppxPackagedFile Include="C:\Github\XamarinForms\XamarinProjects\Dota2Stats\packages\Xamarin.Forms.2.3.3.168\lib\win81\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Debug\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>

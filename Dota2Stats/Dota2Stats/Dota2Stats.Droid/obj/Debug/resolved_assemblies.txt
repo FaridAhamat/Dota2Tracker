@@ -1,6 +1,8 @@
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Dota2Stats.Droid.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Dota2Stats.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\FormsViewGroup.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\SQLite.Net.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\SQLite.Net.Platform.XamarinAndroid.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
@@ -29,6 +31,7 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\ob
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Net.Http.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.ObjectModel.dll
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Linq.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Threading.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Newtonsoft.Json.dll
@@ -41,7 +44,6 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\ob
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Reflection.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Linq.Expressions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Dynamic.Runtime.dll
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Linq.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Text.RegularExpressions.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\System.Text.Encoding.dll

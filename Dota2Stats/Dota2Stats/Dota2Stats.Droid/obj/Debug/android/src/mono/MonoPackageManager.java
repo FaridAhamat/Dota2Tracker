@@ -101,6 +101,8 @@ class MonoPackageManager_Resources {
 		"Dota2Stats.Droid.dll",
 		"Dota2Stats.dll",
 		"FormsViewGroup.dll",
+		"SQLite.Net.dll",
+		"SQLite.Net.Platform.XamarinAndroid.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
@@ -120,6 +122,7 @@ class MonoPackageManager_Resources {
 		"System.Threading.Tasks.dll",
 		"System.Collections.dll",
 		"System.ObjectModel.dll",
+		"System.Linq.dll",
 		"System.Runtime.Extensions.dll",
 		"System.Threading.dll",
 		"Newtonsoft.Json.dll",
@@ -130,7 +133,6 @@ class MonoPackageManager_Resources {
 		"System.Reflection.dll",
 		"System.Linq.Expressions.dll",
 		"System.Dynamic.Runtime.dll",
-		"System.Linq.dll",
 		"System.Text.RegularExpressions.dll",
 		"System.Xml.ReaderWriter.dll",
 		"System.Text.Encoding.dll",
@@ -142,5 +144,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_24";
 }
