@@ -81,12 +81,13 @@ namespace Dota2Stats
         public PlayerMatchHistoryVM()
         {
             // TODO: Fix the CanExecute()
-            TrackPlayerCmd = new Command(SaveSteamUser, () => true);
+            TrackPlayerCmd = new Command(TrackPlayer, () => true);
         }
 
-        private void SaveSteamUser()
+        private void TrackPlayer()
         {
-            //Later
+            //Hold for now
+            //App.SteamUserDb.AddUserData(SteamUser.Account_Id, SteamUser.PersonaName);
         }
 
         private async void GoToMatchDetails()

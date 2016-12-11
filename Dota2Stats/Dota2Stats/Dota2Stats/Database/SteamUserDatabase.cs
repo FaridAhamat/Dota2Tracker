@@ -10,6 +10,8 @@ namespace Dota2Stats
 {
     public class SteamUserDatabase
     {
+        static object locker = new object();
+
         private SQLiteConnection sqliteConnection;
 
         public SteamUserDatabase()
@@ -20,29 +22,40 @@ namespace Dota2Stats
 
         public IEnumerable<SteamUserData> GetAllUserData()
         {
-            return (from t in sqliteConnection.Table<SteamUserData>() select t).ToList();
+            lock (locker)
+            {
+                return (from t in sqliteConnection.Table<SteamUserData>() select t).ToList();
+            }
         }
 
         public SteamUserData GetUserData(string accountId)
         {
-            return sqliteConnection.Table<SteamUserData>().FirstOrDefault(t => t.AccountId == accountId);
+            lock (locker)
+            {
+                return sqliteConnection.Table<SteamUserData>().FirstOrDefault(t => t.AccountId == accountId);
+            }
         }
 
         public void DeleteUserData(string accountId)
         {
-            sqliteConnection.Delete<SteamUserData>(accountId);
+            lock (locker)
+            {
+                sqliteConnection.Delete<SteamUserData>(accountId);
+            }
         }
 
         public void AddUserData(string accountId, string personaName)
         {
-            var steamUser = new SteamUserData
+            lock (locker)
             {
-                AccountId = accountId,
-                PersonaName = personaName
-            };
+                var steamUser = new SteamUserData
+                {
+                    AccountId = accountId,
+                    PersonaName = personaName
+                };
 
-            sqliteConnection.Insert(steamUser);
-            sqliteConnection.Commit();
+                sqliteConnection.Insert(steamUser);
+            }
         }
     }
 }

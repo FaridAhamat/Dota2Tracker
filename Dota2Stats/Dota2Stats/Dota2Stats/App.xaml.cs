@@ -10,10 +10,45 @@ namespace Dota2Stats
 {
     public partial class App : Application
     {
+        static SteamUserDatabase steamUserDb;
+
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPageView(new MainPageVM()));
+
+            if (!DatabaseHasExistingData())
+            {
+                MainPage = new NavigationPage(new MainPageView(new MainPageVM()));
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MainPageWithPlayersView(new MainPageWithPlayersVM()));
+            }
+        }
+
+        private bool DatabaseHasExistingData()
+        {
+            var usersData = SteamUserDb.GetAllUserData();
+
+            if (usersData.Count() > 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public static SteamUserDatabase SteamUserDb
+        {
+            get
+            {
+                if (steamUserDb == null)
+                {
+                    steamUserDb = new SteamUserDatabase();
+                }
+
+                return steamUserDb;
+            }
         }
 
         protected override void OnStart()

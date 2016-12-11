@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dota2Stats.MainPageWithPlayersView">
+  <Grid>
+    <StackLayout>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="2*"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="6*"/>
+          <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="9*"/>
+          <ColumnDefinition Width="2*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Entry Text="{Binding SteamPersona}" Placeholder="Search Name" Grid.Row="1" Grid.Column="1"/>
+        <Button Text="Go!" Command="{Binding GoToSearchSteamPersonaCmd}" Grid.Row="1" Grid.Column="2"/>
+        <Frame Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+          <ListView ItemsSource="{Binding UsersData}" SelectedItem="{Binding UserData}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <Label Text="{Binding PersonaName}"/>
+                  <!--<StackLayout Orientation="Horizontal">
+                    <Button Text="Untrack" FontSize="Small"/>
+                  </StackLayout>-->
+                  <!--<Grid>
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="2*"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="{Binding PersonaName}" Grid.Row="0" Grid.Column="0"/>
+                    <Frame BackgroundColor="#F0F0F0" Padding="0" Grid.Row="0" Grid.Column="1">
+                      <Label Text="Untrack" HorizontalOptions="Center"/>
+                    </Frame>
+                  </Grid>-->
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </Frame>
+      </Grid>
+    </StackLayout>
+    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding GoToSearchSteamPersonaCmd}"
+                        VerticalOptions="Center" HorizontalOptions="Center"/>
+  </Grid>
+</ContentPage>
