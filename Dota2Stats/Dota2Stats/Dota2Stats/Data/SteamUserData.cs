@@ -12,6 +12,9 @@ namespace Dota2Stats
         [PrimaryKey]
         public string AccountId { get; set; }
         public string PersonaName { get; set; }
+        public string SteamUser { get; set; }
+        public string PlayerWinLose { get; set; }
+        public string PlayerMatchHistoryList { get; set; }
 
         public SteamUserData()
         {

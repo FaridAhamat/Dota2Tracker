@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,20 +43,12 @@ namespace Dota2Stats
             //TODO: This implementation is quite crap...
             //TODO: Might be a good idea to save all the data inside the database directly and access it here rather than querying the webAPI again and again
             IsBusy = true;
-            List<PlayerMatchHistory> result = await OpenDotaApi.GetPlayerMatchHistory(UserData.AccountId);
-            PlayerWinLose winloseResult = await OpenDotaApi.GetPlayerWinLose(UserData.AccountId);
-            //SteamUser steamUser = await OpenDotaApi.
-            var steamUsers = await OpenDotaApi.SearchSteamUserByPersona(UserData.PersonaName);
-            SteamUser steamUser = null;
-            foreach (SteamUser s in steamUsers)
-            {
-                if (s.Account_Id == UserData.AccountId)
-                {
-                    steamUser = s;
-                }
-            }
+            var userData = App.SteamUserDb.GetUserData(UserData.AccountId);
+            var playerMatchHistoryList = JsonConvert.DeserializeObject<List<PlayerMatchHistory>>(userData.PlayerMatchHistoryList);
+            var steamUser = JsonConvert.DeserializeObject<SteamUser>(userData.SteamUser);
+            var playerWinLose = JsonConvert.DeserializeObject<PlayerWinLose>(userData.PlayerWinLose);
             IsBusy = false;
-            await Navigation.PushAsync(new PlayerMatchHistoryView(result, steamUser, winloseResult, new PlayerMatchHistoryVM()));
+            await Navigation.PushAsync(new PlayerMatchHistoryView(playerMatchHistoryList, steamUser, playerWinLose, new PlayerMatchHistoryVM()));
         }
     }
 }

@@ -28,7 +28,7 @@
           </Grid>
         </StackLayout>
         <StackLayout VerticalOptions="Center">
-          <Button Text="Track Player" Command="{Binding TrackPlayerCmd}"/>
+          <Button Text="{Binding TrackButtonString}" Command="{Binding TrackPlayerCmd}"/>
         </StackLayout>
       </StackLayout>
       <ListView ItemsSource="{Binding PlayerMatchHistory}"

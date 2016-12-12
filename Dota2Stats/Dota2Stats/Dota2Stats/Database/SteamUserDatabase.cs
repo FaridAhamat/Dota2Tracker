@@ -44,17 +44,11 @@ namespace Dota2Stats
             }
         }
 
-        public void AddUserData(string accountId, string personaName)
+        public void AddUserData(SteamUserData userData)
         {
             lock (locker)
             {
-                var steamUser = new SteamUserData
-                {
-                    AccountId = accountId,
-                    PersonaName = personaName
-                };
-
-                sqliteConnection.Insert(steamUser);
+                sqliteConnection.Insert(userData);
             }
         }
     }

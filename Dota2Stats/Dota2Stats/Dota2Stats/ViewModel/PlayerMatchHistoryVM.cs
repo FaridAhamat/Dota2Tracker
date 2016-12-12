@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -56,6 +57,36 @@ namespace Dota2Stats
             }
         }
 
+        bool isTracked = false;
+        public bool IsTracked
+        {
+            get
+            {
+                return isTracked;
+            }
+            private set
+            {
+                isTracked = value;
+                OnPropertyChanged();
+                OnPropertyChanged("TrackButtonString");
+            }
+        }
+        
+        public string TrackButtonString
+        {
+            get
+            {
+                if (IsTracked)
+                {
+                    return "Untrack";
+                }
+                else
+                {
+                    return "Track";
+                }
+            }
+        }
+
         bool isBusy = false;
         public bool IsBusy
         {
@@ -82,12 +113,37 @@ namespace Dota2Stats
         {
             // TODO: Fix the CanExecute()
             TrackPlayerCmd = new Command(TrackPlayer, () => true);
+            //IsTracked = App.SteamUserDb.GetUserData(SteamUser.Account_Id) != null;      //At this point of time, SteamUser is null
+        }
+
+        //Hack my way for now
+        public void SetIsTracked()
+        {
+            if (SteamUser != null)
+            {
+                IsTracked = App.SteamUserDb.GetUserData(SteamUser.Account_Id) != null;
+            }
         }
 
         private void TrackPlayer()
         {
-            //Hold for now
-            //App.SteamUserDb.AddUserData(SteamUser.Account_Id, SteamUser.PersonaName);
+            if (!IsTracked)
+            {
+                App.SteamUserDb.AddUserData(new SteamUserData
+                {
+                    AccountId = SteamUser.Account_Id,
+                    PersonaName = SteamUser.PersonaName,
+                    SteamUser = JsonConvert.SerializeObject(SteamUser),
+                    PlayerWinLose = JsonConvert.SerializeObject(PlayerWinLose),
+                    PlayerMatchHistoryList = JsonConvert.SerializeObject(PlayerMatchHistory)
+                });
+                IsTracked = true;
+            }
+            else
+            {
+                App.SteamUserDb.DeleteUserData(SteamUser.Account_Id);
+                IsTracked = false;
+            }
         }
 
         private async void GoToMatchDetails()

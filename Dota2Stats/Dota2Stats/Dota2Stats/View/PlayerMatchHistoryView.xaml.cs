@@ -16,6 +16,7 @@ namespace Dota2Stats
             vm.PlayerMatchHistory = matchHistories;
             vm.PlayerWinLose = playerWinlose;
             vm.Navigation = Navigation;
+            vm.SetIsTracked();
             BindingContext = vm;
         }
     }
