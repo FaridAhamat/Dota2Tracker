@@ -1,2 +1,2 @@
 android.app.Application
-Dota2Stats.Droid
+Dota2_Stalker.Dota2_Stalker

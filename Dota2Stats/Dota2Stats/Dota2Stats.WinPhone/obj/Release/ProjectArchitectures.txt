@@ -1,0 +1,2 @@
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.WinPhone\Dota2Stats.WinPhone.csproj;neutral
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\Dota2Stats.csproj;neutral

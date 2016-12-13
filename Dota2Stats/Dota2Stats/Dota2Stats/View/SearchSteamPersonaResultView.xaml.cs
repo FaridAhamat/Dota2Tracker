@@ -16,6 +16,7 @@ namespace Dota2Stats
             vm.Navigation = Navigation;
             vm.SteamUsers = steamUsers;
             BindingContext = vm;
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

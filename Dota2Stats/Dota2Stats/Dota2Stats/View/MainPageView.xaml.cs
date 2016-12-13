@@ -15,6 +15,7 @@ namespace Dota2Stats
             InitializeComponent();
             vm.Navigation = Navigation;
             BindingContext = vm;
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

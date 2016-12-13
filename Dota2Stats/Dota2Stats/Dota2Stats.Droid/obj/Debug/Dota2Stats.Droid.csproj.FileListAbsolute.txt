@@ -1,7 +1,5 @@
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2Stats.Droid.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2Stats.Droid.pdb
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2Stats.Droid.apk
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2Stats.Droid-Signed.apk
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2Stats.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\FormsViewGroup.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\SQLite.Net.dll
@@ -38,7 +36,6 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bi
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\Dota2Stats.Droid.csprojResolveAssemblyReference.cache
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\Dota2Stats.Droid.dll
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\Dota2Stats.Droid.pdb
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\bin\Dota2Stats.Droid.apk
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
@@ -342,5 +339,8 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\ob
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2_Stalker.Dota2_Stalker.apk
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2_Stalker.Dota2_Stalker-Signed.apk
+C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\android\bin\Dota2_Stalker.Dota2_Stalker.apk
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj\Debug\Dota2Stats.Droid.dll.mdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin\Debug\Dota2Stats.Droid.dll.mdb
