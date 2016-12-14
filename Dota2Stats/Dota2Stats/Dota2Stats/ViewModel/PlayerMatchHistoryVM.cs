@@ -113,10 +113,8 @@ namespace Dota2Stats
         {
             // TODO: Fix the CanExecute()
             TrackPlayerCmd = new Command(TrackPlayer, () => true);
-            //IsTracked = App.SteamUserDb.GetUserData(SteamUser.Account_Id) != null;      //At this point of time, SteamUser is null
         }
-
-        //Hack my way for now
+        
         public void SetIsTracked()
         {
             if (SteamUser != null)

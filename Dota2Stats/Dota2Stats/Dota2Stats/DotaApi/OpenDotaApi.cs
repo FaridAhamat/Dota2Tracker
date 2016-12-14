@@ -58,7 +58,7 @@ namespace Dota2Stats
         /// Get player match history
         /// </summary>
         /// <param name="steamId32">Steam32 ID</param>
-        /// <param name="limit">Limit search, hardcoded to 5 for no reason</param>
+        /// <param name="limit">Limit search, hardcoded to 20 for no reason</param>
         /// <returns></returns>
         public static async Task<List<PlayerMatchHistory>> GetPlayerMatchHistory(string steamId32, string limit = "20")
         {

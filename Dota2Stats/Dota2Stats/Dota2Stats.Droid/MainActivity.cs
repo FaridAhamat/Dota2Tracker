@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace Dota2Stats.Droid
 {
-    [Activity(Label = "Dota2Stats", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Dota2 Stalker", Icon = "@drawable/icon_nightstalkerbig", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

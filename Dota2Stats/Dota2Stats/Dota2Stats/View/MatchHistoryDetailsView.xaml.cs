@@ -18,5 +18,10 @@ namespace Dota2Stats
             BindingContext = vm;
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            DisplayAlert("Alert", "Clicked on user name", "OKAY");
+        }
     }
 }
