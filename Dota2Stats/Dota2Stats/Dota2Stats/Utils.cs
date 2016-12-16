@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Dota2Stats
 {
+    /// <summary>
+    /// Utility class
+    /// </summary>
     internal class Utils
     {
         /// <summary>
