@@ -8,6 +8,9 @@ using Xamarin.Forms;
 
 namespace Dota2Stats
 {
+    /// <summary>
+    /// Steam User Database
+    /// </summary>
     public class SteamUserDatabase
     {
         static object locker = new object();

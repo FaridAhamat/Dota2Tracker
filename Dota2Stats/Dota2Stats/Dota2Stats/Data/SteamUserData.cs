@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Dota2Stats
 {
+    /// <summary>
+    /// Steam user data to be put into the database
+    /// </summary>
     public class SteamUserData
     {
         [PrimaryKey]

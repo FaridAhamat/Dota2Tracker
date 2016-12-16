@@ -66,6 +66,11 @@ namespace Dota2Stats
             return JsonConvert.DeserializeObject<List<PlayerMatchHistory>>(await Utils.RequestCall(requestUri));
         }
 
+        /// <summary>
+        /// Get player win lose record
+        /// </summary>
+        /// <param name="accountId">Steam32 ID</param>
+        /// <returns></returns>
         public static async Task<PlayerWinLose> GetPlayerWinLose(string accountId)
         {
             string requestUri = string.Format(GetPlayerWinLoseUri, accountId);
