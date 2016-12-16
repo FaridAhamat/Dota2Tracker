@@ -18,6 +18,7 @@ namespace Dota2Stats
         public string SteamUser { get; set; }
         public string PlayerWinLose { get; set; }
         public string PlayerMatchHistoryList { get; set; }
+        //Add user image's location
 
         public SteamUserData()
         {
