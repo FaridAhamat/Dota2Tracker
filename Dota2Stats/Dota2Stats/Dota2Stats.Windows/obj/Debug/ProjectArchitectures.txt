@@ -1,2 +1,0 @@
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats.Windows\Dota2Stats.Windows.csproj;neutral
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\Dota2Stats.csproj;neutral
