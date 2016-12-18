@@ -59,7 +59,7 @@ namespace Dota2Stats
         /// </summary>
         /// <param name="steamId32">Steam32 ID</param>
         /// <param name="limit">Limit search, hardcoded to 20 for no reason</param>
-        /// <returns></returns>
+        /// <returns>List of player's last match histories</returns>
         public static async Task<List<PlayerMatchHistory>> GetPlayerMatchHistory(string steamId32, string limit = "20")
         {
             string requestUri = string.Format(GetPlayerMatchHistoryUri, steamId32, limit);
@@ -70,7 +70,7 @@ namespace Dota2Stats
         /// Get player win lose record
         /// </summary>
         /// <param name="accountId">Steam32 ID</param>
-        /// <returns></returns>
+        /// <returns>Player's win-lose records</returns>
         public static async Task<PlayerWinLose> GetPlayerWinLose(string accountId)
         {
             string requestUri = string.Format(GetPlayerWinLoseUri, accountId);
