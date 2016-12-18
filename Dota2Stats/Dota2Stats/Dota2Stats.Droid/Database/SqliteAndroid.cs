@@ -7,12 +7,19 @@ using Xamarin.Forms;
 [assembly: Dependency(typeof(SqliteAndroid))]
 namespace Dota2Stats.Droid
 {
+    /// <summary>
+    /// Platform-specific SQLite implementation
+    /// </summary>
     public class SqliteAndroid : ISqlite
     {
         public SqliteAndroid()
         {
         }
 
+        /// <summary>
+        /// Get local database
+        /// </summary>
+        /// <returns>New SQLite connection</returns>
         public SQLiteConnection GetConnection()
         {
             string fileName = "SteamUserData.db3";

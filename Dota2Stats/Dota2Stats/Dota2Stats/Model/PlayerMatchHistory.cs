@@ -132,6 +132,7 @@ namespace Dota2Stats
         {
             get
             {
+                //TODO: If match is less than 1 hour, get minutes
                 var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
                 var timeDiff = DateTime.UtcNow - epoch.AddSeconds(start_time);
 

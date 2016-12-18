@@ -1,2 +1,0 @@
-android.app.Application
-Dota2_Stalker.Dota2_Stalker

@@ -15,7 +15,6 @@ C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Rele
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Release\Xamarin.Forms.Xaml.pdb
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Release\Xamarin.Forms.Xaml.xml
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\bin\Release\System.Net.Primitives.xml
-C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Release\Dota2Stats.csprojResolveAssemblyReference.cache
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Release\Dota2Stats.View.SearchSteamPersonaResultView.xaml.g.cs
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Release\Dota2Stats.View.MainPageView.xaml.g.cs
 C:\Github\XamarinForms\XamarinProjects\Dota2Stats\Dota2Stats\Dota2Stats\obj\Release\Dota2Stats.View.PlayerMatchHistoryView.xaml.g.cs
