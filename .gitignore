@@ -224,5 +224,5 @@ pip-log.txt
 .mr.developer.cfg
 
 #Android build folder
-Dota2Stats\Dota2Stats\Dota2Stats.Droid\bin
-Dota2Stats\Dota2Stats\Dota2Stats.Droid\obj
+Dota2Stats/Dota2Stats/Dota2Stats.Droid/bin
+Dota2Stats/Dota2Stats/Dota2Stats.Droid/obj
