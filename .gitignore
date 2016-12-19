@@ -223,11 +223,11 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-#All the build folder
+#Dota2 Stats project's build folder
 Dota2Stats/Dota2Stats/Dota2Stats.Droid/bin
 Dota2Stats/Dota2Stats/Dota2Stats.Droid/obj
 Dota2Stats/Dota2Stats/Dota2Stats/bin
 Dota2Stats/Dota2Stats/Dota2Stats/obj
 Dota2Stats/Dota2Stats/Dota2Stats.WinPhone/bin
 Dota2Stats/Dota2Stats/Dota2Stats.WinPhone/obj
-
+Dota2Stats/Dota2Stats/Dota2Stats/DotaApi/ApiKey.cs
