@@ -68,7 +68,11 @@
             <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
 
             <Image Source="{Binding Players[0].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
-            <Label Text="{Binding Players[0].PersonaName}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding Players[0].PersonaName}" Grid.Row="1" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="0" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[0].level}" Grid.Row="1" Grid.Column="2"/>
             <Label Text="{Binding Players[0].kills}" Grid.Row="1" Grid.Column="3"/>
             <Label Text="{Binding Players[0].deaths}" Grid.Row="1" Grid.Column="4"/>
@@ -89,7 +93,11 @@
             <Image Source="{Binding Players[0].PlayerItem5}" Grid.Row="1" Grid.Column="19"/>
 
             <Image Source="{Binding Players[1].PlayerHeroImage}" Grid.Row="2" Grid.Column="0"/>
-            <Label Text="{Binding Players[1].PersonaName}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="{Binding Players[1].PersonaName}" Grid.Row="2" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="1" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[1].level}" Grid.Row="2" Grid.Column="2"/>
             <Label Text="{Binding Players[1].kills}" Grid.Row="2" Grid.Column="3"/>
             <Label Text="{Binding Players[1].deaths}" Grid.Row="2" Grid.Column="4"/>
@@ -110,7 +118,11 @@
             <Image Source="{Binding Players[1].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
 
             <Image Source="{Binding Players[2].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
-            <Label Text="{Binding Players[2].PersonaName}" Grid.Row="3" Grid.Column="1"/>
+            <Label Text="{Binding Players[2].PersonaName}" Grid.Row="3" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="0" NumberOfTapsRequired="2"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[2].level}" Grid.Row="3" Grid.Column="2"/>
             <Label Text="{Binding Players[2].kills}" Grid.Row="3" Grid.Column="3"/>
             <Label Text="{Binding Players[2].deaths}" Grid.Row="3" Grid.Column="4"/>
@@ -131,7 +143,11 @@
             <Image Source="{Binding Players[2].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
 
             <Image Source="{Binding Players[3].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
-            <Label Text="{Binding Players[3].PersonaName}" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="{Binding Players[3].PersonaName}" Grid.Row="4" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="3" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[3].level}" Grid.Row="4" Grid.Column="2"/>
             <Label Text="{Binding Players[3].kills}" Grid.Row="4" Grid.Column="3"/>
             <Label Text="{Binding Players[3].deaths}" Grid.Row="4" Grid.Column="4"/>
@@ -152,7 +168,11 @@
             <Image Source="{Binding Players[3].PlayerItem5}" Grid.Row="4" Grid.Column="19"/>
 
             <Image Source="{Binding Players[4].PlayerHeroImage}" Grid.Row="5" Grid.Column="0"/>
-            <Label Text="{Binding Players[4].PersonaName}" Grid.Row="5" Grid.Column="1"/>
+            <Label Text="{Binding Players[4].PersonaName}" Grid.Row="5" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="4" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[4].level}" Grid.Row="5" Grid.Column="2"/>
             <Label Text="{Binding Players[4].kills}" Grid.Row="5" Grid.Column="3"/>
             <Label Text="{Binding Players[4].deaths}" Grid.Row="5" Grid.Column="4"/>
@@ -227,7 +247,11 @@
             <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
 
             <Image Source="{Binding Players[5].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
-            <Label Text="{Binding Players[5].PersonaName}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding Players[5].PersonaName}" Grid.Row="1" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="5" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[5].level}" Grid.Row="1" Grid.Column="2"/>
             <Label Text="{Binding Players[5].kills}" Grid.Row="1" Grid.Column="3"/>
             <Label Text="{Binding Players[5].deaths}" Grid.Row="1" Grid.Column="4"/>
@@ -248,7 +272,11 @@
             <Image Source="{Binding Players[5].PlayerItem5}" Grid.Row="1" Grid.Column="19"/>
 
             <Image Source="{Binding Players[6].PlayerHeroImage}" Grid.Row="2" Grid.Column="0"/>
-            <Label Text="{Binding Players[6].PersonaName}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="{Binding Players[6].PersonaName}" Grid.Row="2" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="6" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[6].level}" Grid.Row="2" Grid.Column="2"/>
             <Label Text="{Binding Players[6].kills}" Grid.Row="2" Grid.Column="3"/>
             <Label Text="{Binding Players[6].deaths}" Grid.Row="2" Grid.Column="4"/>
@@ -269,7 +297,11 @@
             <Image Source="{Binding Players[6].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
 
             <Image Source="{Binding Players[7].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
-            <Label Text="{Binding Players[7].PersonaName}" Grid.Row="3" Grid.Column="1"/>
+            <Label Text="{Binding Players[7].PersonaName}" Grid.Row="3" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="7" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[7].level}" Grid.Row="3" Grid.Column="2"/>
             <Label Text="{Binding Players[7].kills}" Grid.Row="3" Grid.Column="3"/>
             <Label Text="{Binding Players[7].deaths}" Grid.Row="3" Grid.Column="4"/>
@@ -290,7 +322,11 @@
             <Image Source="{Binding Players[7].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
 
             <Image Source="{Binding Players[8].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
-            <Label Text="{Binding Players[8].PersonaName}" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="{Binding Players[8].PersonaName}" Grid.Row="4" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="8" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[8].level}" Grid.Row="4" Grid.Column="2"/>
             <Label Text="{Binding Players[8].kills}" Grid.Row="4" Grid.Column="3"/>
             <Label Text="{Binding Players[8].deaths}" Grid.Row="4" Grid.Column="4"/>
@@ -311,7 +347,11 @@
             <Image Source="{Binding Players[8].PlayerItem5}" Grid.Row="4" Grid.Column="19"/>
 
             <Image Source="{Binding Players[9].PlayerHeroImage}" Grid.Row="5" Grid.Column="0"/>
-            <Label Text="{Binding Players[9].PersonaName}" Grid.Row="5" Grid.Column="1"/>
+            <Label Text="{Binding Players[9].PersonaName}" Grid.Row="5" Grid.Column="1">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="9" NumberOfTapsRequired="1"/>
+              </Label.GestureRecognizers>
+            </Label>
             <Label Text="{Binding Players[9].level}" Grid.Row="5" Grid.Column="2"/>
             <Label Text="{Binding Players[9].kills}" Grid.Row="5" Grid.Column="3"/>
             <Label Text="{Binding Players[9].deaths}" Grid.Row="5" Grid.Column="4"/>

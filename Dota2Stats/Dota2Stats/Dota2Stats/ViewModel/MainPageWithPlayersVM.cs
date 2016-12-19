@@ -46,7 +46,7 @@ namespace Dota2Stats
             var steamUser = JsonConvert.DeserializeObject<SteamUser>(userData.SteamUser);
             var playerWinLose = JsonConvert.DeserializeObject<PlayerWinLose>(userData.PlayerWinLose);
             IsBusy = false;
-            await Navigation.PushAsync(new PlayerMatchHistoryView(playerMatchHistoryList, steamUser, playerWinLose, new PlayerMatchHistoryVM()));
+            //await Navigation.PushAsync(new PlayerMatchHistoryView(playerMatchHistoryList, steamUser, playerWinLose, new PlayerMatchHistoryVM()));
         }
     }
 }

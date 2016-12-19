@@ -100,6 +100,57 @@ namespace Dota2Stats
             set;
         }
 
+        public Command TapPlayerNameCmd
+        {
+            get;
+        }
+
+        private string CurrentUserPersonaName
+        {
+            get;
+            set;
+        }
+
+        public MatchHistoryDetailsVM(string currentUserPersonaName)
+        {
+            CurrentUserPersonaName = currentUserPersonaName;
+            TapPlayerNameCmd = new Command(OnTapPlayerNameCmd);
+        }
+
+        private async void OnTapPlayerNameCmd(object obj)
+        {
+            //TODO: Add ActivityIndicator here
+            int param = Convert.ToInt32(obj);
+            if (Players[param].account_id != null)
+            {
+                if (Players[param].PersonaName == CurrentUserPersonaName)
+                {
+                    await Navigation.PopAsync();
+                }
+                else
+                {
+                    var playerMatchHistory = await OpenDotaApi.GetPlayerMatchHistory(Players[param].account_id);
+                    var playerWinLose = await OpenDotaApi.GetPlayerWinLose(Players[param].account_id);
+                    var playerSummaries = await SteamApi.GetPlayerSummaries(Convert.ToInt32(Players[param].account_id));
+                    var steamPlayer = Utils.GetSteamPlayer(playerSummaries);
+                    await Navigation.PushAsync(new PlayerMatchHistoryView(playerMatchHistory, steamPlayer, playerWinLose, new PlayerMatchHistoryVM()));
+                }
+            }
+            
+            //await Navigation.PushAsync(new ContentPage
+            //{
+            //    Content = new Label
+            //    {
+            //        HorizontalOptions = LayoutOptions.Center,
+            //        VerticalOptions = LayoutOptions.Center,
+            //        TextColor = Color.Red,
+            //        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+            //        FontAttributes = FontAttributes.Bold,
+            //        Text = string.Format("OHAI")
+            //    }
+            //});
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void OnPropertyChanged([CallerMemberName]string name = "")

@@ -87,8 +87,10 @@ namespace Dota2Stats
             IsBusy = true;
             List<PlayerMatchHistory> result = await OpenDotaApi.GetPlayerMatchHistory(selectedSteamUser.Account_Id);
             PlayerWinLose winloseResult = await OpenDotaApi.GetPlayerWinLose(selectedSteamUser.Account_Id);
+            var playerSummaries = await SteamApi.GetPlayerSummaries(Convert.ToInt32(selectedSteamUser.Account_Id));
+            SteamPlayer steamPlayer = Utils.GetSteamPlayer(playerSummaries);
             IsBusy = false;
-            await Navigation.PushAsync(new PlayerMatchHistoryView(result, selectedSteamUser, winloseResult, new PlayerMatchHistoryVM()));
+            await Navigation.PushAsync(new PlayerMatchHistoryView(result, steamPlayer, winloseResult, new PlayerMatchHistoryVM()));
         }
 
         public INavigation Navigation

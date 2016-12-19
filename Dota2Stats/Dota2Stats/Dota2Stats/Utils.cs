@@ -47,7 +47,7 @@ namespace Dota2Stats
         /// </summary>
         /// <param name="steam32"></param>
         /// <returns></returns>
-        public static long ConvertSteam32ToSteam64(long steam32)
+        public static long ConvertSteam32ToSteam64(int steam32)
         {
             return steam32 + 76561197960265728;
         }
@@ -61,6 +61,16 @@ namespace Dota2Stats
         {
             TimeSpan time = TimeSpan.FromSeconds(duration);
             return time.ToString(@"hh\:mm\:ss");
+        }
+
+        /// <summary>
+        /// Get the content SteamPlayer class from GetPlayerSummariesRes
+        /// </summary>
+        /// <param name="playerSummaries">GetPlayerSummariesRes class</param>
+        /// <returns></returns>
+        public static SteamPlayer GetSteamPlayer(GetPlayerSummariesRes playerSummaries)
+        {
+            return (from player in playerSummaries.Response.Players select player).FirstOrDefault();
         }
 
         // Not used for now

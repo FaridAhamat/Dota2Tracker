@@ -12,7 +12,12 @@ namespace Dota2Stats
 {
     public class PlayerMatchHistoryVM : INotifyPropertyChanged
     {
-        public SteamUser SteamUser
+        //public SteamUser SteamUser
+        //{
+        //    get; set;
+        //}
+
+        public SteamPlayer SteamPlayer
         {
             get; set;
         }
@@ -117,31 +122,31 @@ namespace Dota2Stats
         
         public void SetIsTracked()
         {
-            if (SteamUser != null)
-            {
-                IsTracked = App.SteamUserDb.GetUserData(SteamUser.Account_Id) != null;
-            }
+            //if (SteamUser != null)
+            //{
+            //    IsTracked = App.SteamUserDb.GetUserData(SteamUser.Account_Id) != null;
+            //}
         }
 
         private void TrackPlayer()
         {
-            if (!IsTracked)
-            {
-                App.SteamUserDb.AddUserData(new SteamUserData
-                {
-                    AccountId = SteamUser.Account_Id,
-                    PersonaName = SteamUser.PersonaName,
-                    SteamUser = JsonConvert.SerializeObject(SteamUser),
-                    PlayerWinLose = JsonConvert.SerializeObject(PlayerWinLose),
-                    PlayerMatchHistoryList = JsonConvert.SerializeObject(PlayerMatchHistory)
-                });
-                IsTracked = true;
-            }
-            else
-            {
-                App.SteamUserDb.DeleteUserData(SteamUser.Account_Id);
-                IsTracked = false;
-            }
+            //if (!IsTracked)
+            //{
+            //    App.SteamUserDb.AddUserData(new SteamUserData
+            //    {
+            //        AccountId = SteamUser.Account_Id,
+            //        PersonaName = SteamUser.PersonaName,
+            //        SteamUser = JsonConvert.SerializeObject(SteamUser),
+            //        PlayerWinLose = JsonConvert.SerializeObject(PlayerWinLose),
+            //        PlayerMatchHistoryList = JsonConvert.SerializeObject(PlayerMatchHistory)
+            //    });
+            //    IsTracked = true;
+            //}
+            //else
+            //{
+            //    App.SteamUserDb.DeleteUserData(SteamUser.Account_Id);
+            //    IsTracked = false;
+            //}
         }
 
         private async void GoToMatchDetails()
@@ -149,7 +154,7 @@ namespace Dota2Stats
             IsBusy = true;
             var result = await OpenDotaApi.GetMatchDetails(matchHistory.match_id);
             IsBusy = false;
-            await Navigation.PushAsync(new MatchHistoryDetailsView(result, new MatchHistoryDetailsVM()));
+            await Navigation.PushAsync(new MatchHistoryDetailsView(result, new MatchHistoryDetailsVM(SteamPlayer.PersonaName)));
         }
 
         public INavigation Navigation

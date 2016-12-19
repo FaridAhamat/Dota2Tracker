@@ -42,9 +42,12 @@
     <Compile Include="Database\SteamUserDatabase.cs" />
     <Compile Include="Data\SteamUserData.cs" />
     <Compile Include="DotaApi\OpenDotaApi.cs" />
+    <Compile Include="DotaApi\SteamApi.cs" />
+    <Compile Include="DotaApi\ApiKey.cs" />
     <Compile Include="Model\MatchDetails.cs" />
     <Compile Include="Model\PlayerDetails.cs" />
     <Compile Include="Model\PlayerWinLose.cs" />
+    <Compile Include="Model\SteamPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\PlayerMatchHistory.cs" />
     <Compile Include="Model\SteamUser.cs" />

@@ -6,9 +6,9 @@
   <Grid>
     <StackLayout>
       <StackLayout Orientation="Horizontal">
-        <Image Source="{Binding SteamUser.AvatarFull}"/>
+        <Image Source="{Binding SteamPlayer.AvatarFull}"/>
         <StackLayout>
-          <Label Text="{Binding SteamUser.PersonaName}" FontSize="Large" FontAttributes="Bold"/>
+          <Label Text="{Binding SteamPlayer.PersonaName}" FontSize="Large" FontAttributes="Bold"/>
           <Grid>
             <Grid.RowDefinitions>
               <RowDefinition Height="Auto"/>
