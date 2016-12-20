@@ -31,9 +31,10 @@
           <Button Text="{Binding TrackButtonString}" Command="{Binding TrackPlayerCmd}"/>
         </StackLayout>
       </StackLayout>
-      <ListView ItemsSource="{Binding PlayerMatchHistory}"
-            SelectedItem="{Binding MatchHistory}"
-            HasUnevenRows="True">
+      <ListView x:Name="matchHistoryListView"
+                ItemsSource="{Binding PlayerMatchHistory}" 
+                SelectedItem="{Binding SelectedMatchHistory}"
+                HasUnevenRows="True">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>

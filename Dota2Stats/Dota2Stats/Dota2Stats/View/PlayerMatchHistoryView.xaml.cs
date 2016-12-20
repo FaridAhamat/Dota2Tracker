@@ -9,18 +9,6 @@ namespace Dota2Stats
 {
     public partial class PlayerMatchHistoryView : ContentPage
     {
-        //public PlayerMatchHistoryView(List<PlayerMatchHistory> matchHistories, SteamUser steamUser, PlayerWinLose playerWinlose, PlayerMatchHistoryVM vm)
-        //{
-        //    InitializeComponent();
-        //    vm.SteamUser = steamUser;
-        //    vm.PlayerMatchHistory = matchHistories;
-        //    vm.PlayerWinLose = playerWinlose;
-        //    vm.Navigation = Navigation;
-        //    vm.SetIsTracked();
-        //    BindingContext = vm;
-        //    NavigationPage.SetHasNavigationBar(this, false);
-        //}
-
         public PlayerMatchHistoryView(List<PlayerMatchHistory> matchHistories, SteamPlayer steamPlayer, PlayerWinLose playerWinlose, PlayerMatchHistoryVM vm)
         {
             InitializeComponent();
@@ -31,6 +19,12 @@ namespace Dota2Stats
             vm.SetIsTracked();
             BindingContext = vm;
             NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            matchHistoryListView.SelectedItem = null;
         }
     }
 }

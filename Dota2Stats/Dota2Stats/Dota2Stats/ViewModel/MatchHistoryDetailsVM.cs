@@ -136,19 +136,6 @@ namespace Dota2Stats
                     await Navigation.PushAsync(new PlayerMatchHistoryView(playerMatchHistory, steamPlayer, playerWinLose, new PlayerMatchHistoryVM()));
                 }
             }
-            
-            //await Navigation.PushAsync(new ContentPage
-            //{
-            //    Content = new Label
-            //    {
-            //        HorizontalOptions = LayoutOptions.Center,
-            //        VerticalOptions = LayoutOptions.Center,
-            //        TextColor = Color.Red,
-            //        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-            //        FontAttributes = FontAttributes.Bold,
-            //        Text = string.Format("OHAI")
-            //    }
-            //});
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

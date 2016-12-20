@@ -44,20 +44,21 @@ namespace Dota2Stats
             }
         }
 
-        PlayerMatchHistory matchHistory;
-        public PlayerMatchHistory MatchHistory
+        PlayerMatchHistory selectedMatchHistory;
+        public PlayerMatchHistory SelectedMatchHistory
         {
             get
             {
-                return matchHistory;
+                return selectedMatchHistory;
             }
             set
             {
-                if (value != matchHistory)
+                if (value != null)
                 {
-                    matchHistory = value;
+                    selectedMatchHistory = value;
                     GoToMatchDetails();
                 }
+
                 OnPropertyChanged();
             }
         }
@@ -152,7 +153,7 @@ namespace Dota2Stats
         private async void GoToMatchDetails()
         {
             IsBusy = true;
-            var result = await OpenDotaApi.GetMatchDetails(matchHistory.match_id);
+            var result = await OpenDotaApi.GetMatchDetails(selectedMatchHistory.match_id);
             IsBusy = false;
             await Navigation.PushAsync(new MatchHistoryDetailsView(result, new MatchHistoryDetailsVM(SteamPlayer.PersonaName)));
         }
