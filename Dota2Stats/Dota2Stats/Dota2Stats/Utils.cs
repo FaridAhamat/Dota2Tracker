@@ -64,6 +64,16 @@ namespace Dota2Stats
         }
 
         /// <summary>
+        /// Convert the duration (in seconds) to TimeSpan format
+        /// </summary>
+        /// <param name="duration"></param>
+        /// <returns>TimeSpan object</returns>
+        public static TimeSpan ConvertDurationToTimeSpan(int duration)
+        {
+            return new TimeSpan(0, 0, duration);
+        }
+
+        /// <summary>
         /// Get the content SteamPlayer class from GetPlayerSummariesRes
         /// </summary>
         /// <param name="playerSummaries">GetPlayerSummariesRes class</param>

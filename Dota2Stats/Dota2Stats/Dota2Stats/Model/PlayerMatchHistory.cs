@@ -132,19 +132,28 @@ namespace Dota2Stats
         {
             get
             {
-                //TODO: If match is less than 1 hour, get minutes
                 var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
                 var timeDiff = DateTime.UtcNow - epoch.AddSeconds(start_time);
 
-                var timeDiffHours = Math.Truncate(timeDiff.TotalHours);
+                var gameDuration = Utils.ConvertDurationToTimeSpan(Duration);
+                var timeDiffMins = Math.Truncate(timeDiff.TotalMinutes - gameDuration.TotalMinutes);
 
-                if (timeDiffHours <= 23)
+                if (timeDiffMins <= 59)
                 {
-                    return string.Format("{0} hours ago", timeDiffHours);
+                    return string.Format("{0} minutes ago", timeDiffMins);
                 }
                 else
                 {
-                    return string.Format("{0} days ago", Math.Truncate(timeDiff.TotalDays));
+                    var timeDiffHours = Math.Truncate(timeDiff.TotalHours - gameDuration.TotalHours);
+
+                    if (timeDiffHours <= 23)
+                    {
+                        return string.Format("{0} hours ago", timeDiffHours);
+                    }
+                    else
+                    {
+                        return string.Format("{0} days ago", Math.Truncate(timeDiff.TotalDays));
+                    }
                 }
             }
         }
