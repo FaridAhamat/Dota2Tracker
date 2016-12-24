@@ -1,9 +1,0 @@
-﻿<Application
-    x:Class="Dota2Stats.UWP.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Dota2Stats.UWP"
-    RequestedTheme="Light">
-
-</Application>
-
