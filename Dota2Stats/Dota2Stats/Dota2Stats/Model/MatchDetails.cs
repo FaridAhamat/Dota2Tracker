@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace Dota2Stats
 {
@@ -559,6 +560,18 @@ namespace Dota2Stats
                 string itemImg = "";
                 Utils.ItemImagesDict.TryGetValue(item_5, out itemImg);
                 return itemImg;
+            }
+        }
+        public FontAttributes ClickableUser
+        {
+            get
+            {
+                if (account_id == null)
+                {
+                    return FontAttributes.Italic;
+                }
+
+                return FontAttributes.None;
             }
         }
     }

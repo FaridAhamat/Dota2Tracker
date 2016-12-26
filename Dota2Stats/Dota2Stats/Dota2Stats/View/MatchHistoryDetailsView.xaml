@@ -68,7 +68,7 @@
             <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
 
             <Image Source="{Binding Players[0].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
-            <Label Text="{Binding Players[0].PersonaName}" Grid.Row="1" Grid.Column="1">
+            <Label Text="{Binding Players[0].PersonaName}" FontAttributes="{Binding Players[0].ClickableUser}" Grid.Row="1" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="0" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -93,7 +93,7 @@
             <Image Source="{Binding Players[0].PlayerItem5}" Grid.Row="1" Grid.Column="19"/>
 
             <Image Source="{Binding Players[1].PlayerHeroImage}" Grid.Row="2" Grid.Column="0"/>
-            <Label Text="{Binding Players[1].PersonaName}" Grid.Row="2" Grid.Column="1">
+            <Label Text="{Binding Players[1].PersonaName}" FontAttributes="{Binding Players[1].ClickableUser}" Grid.Row="2" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="1" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -118,7 +118,7 @@
             <Image Source="{Binding Players[1].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
 
             <Image Source="{Binding Players[2].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
-            <Label Text="{Binding Players[2].PersonaName}" Grid.Row="3" Grid.Column="1">
+            <Label Text="{Binding Players[2].PersonaName}" FontAttributes="{Binding Players[2].ClickableUser}" Grid.Row="3" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="0" NumberOfTapsRequired="2"/>
               </Label.GestureRecognizers>
@@ -143,7 +143,7 @@
             <Image Source="{Binding Players[2].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
 
             <Image Source="{Binding Players[3].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
-            <Label Text="{Binding Players[3].PersonaName}" Grid.Row="4" Grid.Column="1">
+            <Label Text="{Binding Players[3].PersonaName}" FontAttributes="{Binding Players[3].ClickableUser}" Grid.Row="4" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="3" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -168,7 +168,7 @@
             <Image Source="{Binding Players[3].PlayerItem5}" Grid.Row="4" Grid.Column="19"/>
 
             <Image Source="{Binding Players[4].PlayerHeroImage}" Grid.Row="5" Grid.Column="0"/>
-            <Label Text="{Binding Players[4].PersonaName}" Grid.Row="5" Grid.Column="1">
+            <Label Text="{Binding Players[4].PersonaName}" FontAttributes="{Binding Players[4].ClickableUser}" Grid.Row="5" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="4" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -247,7 +247,7 @@
             <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
 
             <Image Source="{Binding Players[5].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
-            <Label Text="{Binding Players[5].PersonaName}" Grid.Row="1" Grid.Column="1">
+            <Label Text="{Binding Players[5].PersonaName}" FontAttributes="{Binding Players[5].ClickableUser}" Grid.Row="1" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="5" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -272,7 +272,7 @@
             <Image Source="{Binding Players[5].PlayerItem5}" Grid.Row="1" Grid.Column="19"/>
 
             <Image Source="{Binding Players[6].PlayerHeroImage}" Grid.Row="2" Grid.Column="0"/>
-            <Label Text="{Binding Players[6].PersonaName}" Grid.Row="2" Grid.Column="1">
+            <Label Text="{Binding Players[6].PersonaName}" FontAttributes="{Binding Players[6].ClickableUser}" Grid.Row="2" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="6" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -297,7 +297,7 @@
             <Image Source="{Binding Players[6].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
 
             <Image Source="{Binding Players[7].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
-            <Label Text="{Binding Players[7].PersonaName}" Grid.Row="3" Grid.Column="1">
+            <Label Text="{Binding Players[7].PersonaName}" FontAttributes="{Binding Players[7].ClickableUser}" Grid.Row="3" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="7" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -322,7 +322,7 @@
             <Image Source="{Binding Players[7].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
 
             <Image Source="{Binding Players[8].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
-            <Label Text="{Binding Players[8].PersonaName}" Grid.Row="4" Grid.Column="1">
+            <Label Text="{Binding Players[8].PersonaName}" FontAttributes="{Binding Players[8].ClickableUser}" Grid.Row="4" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="8" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
@@ -347,7 +347,7 @@
             <Image Source="{Binding Players[8].PlayerItem5}" Grid.Row="4" Grid.Column="19"/>
 
             <Image Source="{Binding Players[9].PlayerHeroImage}" Grid.Row="5" Grid.Column="0"/>
-            <Label Text="{Binding Players[9].PersonaName}" Grid.Row="5" Grid.Column="1">
+            <Label Text="{Binding Players[9].PersonaName}" FontAttributes="{Binding Players[9].ClickableUser}" Grid.Row="5" Grid.Column="1">
               <Label.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding TapPlayerNameCmd}" CommandParameter="9" NumberOfTapsRequired="1"/>
               </Label.GestureRecognizers>
