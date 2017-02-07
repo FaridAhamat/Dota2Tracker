@@ -513,5 +513,14 @@ namespace Dota2Stats
             { 21, "1v1 Mid" },
             { 22, "Ranked All Pick" },
         };
+
+        internal static Dictionary<int, string> PermBuffDict = new Dictionary<int, string>
+        {
+            { 1, "buff_moonshard.png" },
+            { 2, "buff_aghanim.png" },
+            { 3, "buff_glaivesofwisdom.png" },
+            { 4, "buff_fleshheap.png" },
+            { 5, "buff_duel.png" },
+        };
     }
 }

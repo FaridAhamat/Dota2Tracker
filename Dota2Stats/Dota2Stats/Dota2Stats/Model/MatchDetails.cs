@@ -7,6 +7,41 @@ using Xamarin.Forms;
 
 namespace Dota2Stats
 {
+    public class PermanentBuff
+    {
+        public int permanent_buff
+        {
+            get; set;
+        }
+        public int stack_count
+        {
+            get; set;
+        }
+        public string PlayerBuff
+        {
+            get
+            {
+                string buff = "icon.png";
+
+                Utils.PermBuffDict.TryGetValue(permanent_buff, out buff);
+
+                return buff;
+            }
+        }
+        public string PlayerStackCount
+        {
+            get
+            {
+                if (stack_count > 0)
+                {
+                    return string.Format("x{0}", stack_count);
+                }
+
+                return string.Empty;
+            }
+        }
+    }
+
     public class GoldPerMin
     {
         public int raw
@@ -154,6 +189,18 @@ namespace Dota2Stats
             get; set;
         }
         public int assists
+        {
+            get; set;
+        }
+        public int backpack_0
+        {
+            get; set;
+        }
+        public int backpack_1
+        {
+            get; set;
+        }
+        public int backpack_2
         {
             get; set;
         }
@@ -344,9 +391,23 @@ namespace Dota2Stats
         {
             get; set;
         }
-        public List<object> permanent_buffs
+        List<PermanentBuff> permBuffs;
+        public List<PermanentBuff> permanent_buffs
         {
             get; set;
+            //TODO: This is a freaking mess...
+            //get
+            //{
+            //    return permBuffs;
+            //}
+            //set
+            //{
+            //    permBuffs = new List<PermanentBuff>();
+
+            //    foreach (var v in value)
+            //    {
+            //    }
+            //}
         }
         public object pings
         {
@@ -508,6 +569,7 @@ namespace Dota2Stats
         {
             get; set;
         }
+        //Self-made properties
         public string PlayerItem0
         {
             get

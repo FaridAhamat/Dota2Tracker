@@ -17,5 +17,10 @@ namespace Dota2Stats
             BindingContext = vm;
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            //this.Navigation.PushAsync(new TestPage());
+        }
     }
 }

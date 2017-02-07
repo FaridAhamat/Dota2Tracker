@@ -49,6 +49,10 @@
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
+              <!--Figure out later if use star or use Auto-->
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <BoxView BackgroundColor="#F0F0F0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="20" HeightRequest="25"/>
@@ -66,6 +70,7 @@
             <Label Text="TD" Grid.Row="0" Grid.Column="12" FontSize="Small" FontAttributes="Bold"/>
             <Label Text="Golds" Grid.Row="0" Grid.Column="13" FontSize="Small" FontAttributes="Bold"/>
             <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Buffs" Grid.Row="0" Grid.Column="20" Grid.ColumnSpan="3" FontSize="Small" FontAttributes="Bold"/>
 
             <Image Source="{Binding Players[0].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
             <Label Text="{Binding Players[0].PersonaName}" FontAttributes="{Binding Players[0].ClickableUser}" Grid.Row="1" Grid.Column="1">
@@ -116,6 +121,13 @@
             <Image Source="{Binding Players[1].PlayerItem3}" Grid.Row="2" Grid.Column="17"/>
             <Image Source="{Binding Players[1].PlayerItem4}" Grid.Row="2" Grid.Column="18"/>
             <Image Source="{Binding Players[1].PlayerItem5}" Grid.Row="2" Grid.Column="19"/>
+            <!--TODO: This will fail because the List is of size 1 only-->
+            <!--<Image Source="{Binding Players[9].permanent_buffs[1].PlayerBuff}" Grid.Row="2" Grid.Column="21"/>
+            <Label Text="{Binding Players[9].permanent_buffs[1].PlayerStackCount}" FontSize="Small" FontAttributes="Bold" TextColor="Red" HorizontalTextAlignment="End" Grid.Row="2" Grid.Column="21"/>-->
+            <!--<StackLayout Grid.Row="2" Grid.Column="20" Orientation="Horizontal">
+              <Image Source="{Binding Players[1].permanent_buffs[9].PlayerBuff}" Grid.Row="2" Grid.Column="20"/>
+              <Label Text="{Binding Players[1].permanent_buffs[9].PlayerStackCount}" FontSize="Micro"/>
+            </StackLayout>-->
 
             <Image Source="{Binding Players[2].PlayerHeroImage}" Grid.Row="3" Grid.Column="0"/>
             <Label Text="{Binding Players[2].PersonaName}" FontAttributes="{Binding Players[2].ClickableUser}" Grid.Row="3" Grid.Column="1">
@@ -141,6 +153,9 @@
             <Image Source="{Binding Players[2].PlayerItem3}" Grid.Row="3" Grid.Column="17"/>
             <Image Source="{Binding Players[2].PlayerItem4}" Grid.Row="3" Grid.Column="18"/>
             <Image Source="{Binding Players[2].PlayerItem5}" Grid.Row="3" Grid.Column="19"/>
+            <StackLayout x:Name="Player2Buff1" Grid.Row="3" Grid.Column="20"/>
+            <StackLayout x:Name="Player2Buff2" Grid.Row="3" Grid.Column="21"/>
+            <StackLayout x:Name="Player2Buff3" Grid.Row="3" Grid.Column="22"/>
 
             <Image Source="{Binding Players[3].PlayerHeroImage}" Grid.Row="4" Grid.Column="0"/>
             <Label Text="{Binding Players[3].PersonaName}" FontAttributes="{Binding Players[3].ClickableUser}" Grid.Row="4" Grid.Column="1">
@@ -228,6 +243,9 @@
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
               <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
+              <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
             <BoxView BackgroundColor="#F0F0F0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="20" HeightRequest="25"/>
@@ -245,6 +263,7 @@
             <Label Text="TD" Grid.Row="0" Grid.Column="12" FontSize="Small" FontAttributes="Bold"/>
             <Label Text="Golds" Grid.Row="0" Grid.Column="13" FontSize="Small" FontAttributes="Bold"/>
             <Label Text="Items" Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="6" FontSize="Small" FontAttributes="Bold"/>
+            <Label Text="Buffs" Grid.Row="0" Grid.Column="20" Grid.ColumnSpan="3" FontSize="Small" FontAttributes="Bold"/>
 
             <Image Source="{Binding Players[5].PlayerHeroImage}" Grid.Row="1" Grid.Column="0"/>
             <Label Text="{Binding Players[5].PersonaName}" FontAttributes="{Binding Players[5].ClickableUser}" Grid.Row="1" Grid.Column="1">
@@ -370,9 +389,14 @@
             <Image Source="{Binding Players[9].PlayerItem3}" Grid.Row="5" Grid.Column="17"/>
             <Image Source="{Binding Players[9].PlayerItem4}" Grid.Row="5" Grid.Column="18"/>
             <Image Source="{Binding Players[9].PlayerItem5}" Grid.Row="5" Grid.Column="19"/>
+            <!--<StackLayout Orientation="Horizontal">
+              <Image Source="{Binding Players[9].permanent_buffs[0].PlayerBuff}" Grid.Row="2" Grid.Column="20"/>
+              <Label Text="{Binding Players[9].permanent_buffs[0].PlayerStackCount}" FontSize="Micro" Grid.Row="2" Grid.Column="20"/>
+            </StackLayout>-->
           </Grid>
         </ScrollView>
       </Frame>
+      <!--<Image Source="{Binding Players[1].permanent_buffs[0].PlayerBuff}"/>-->
     </StackLayout>
   </ScrollView>
 </ContentPage>

@@ -6,6 +6,7 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
       <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="*"/>
@@ -17,6 +18,7 @@
     <Button Text="Go!" Command="{Binding GoToSearchSteamPersonaCmd}" Grid.Row="0" Grid.Column="2"/>
     <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding GoToSearchSteamPersonaCmd}"
                        Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+    <Button Text="GO" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked"/>
   </Grid>
   <!--<StackLayout VerticalOptions="End">
     <ListView ItemsSource="SteamUsersData" HasUnevenRows="True">
